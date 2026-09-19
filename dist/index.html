@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=3">
   <link rel="stylesheet" href="styles.css?v=3">
   <link rel="stylesheet" href="map.css?v=3">
+  <link rel="stylesheet" href="flight.css?v=5">
 </head>
 <body>
   <header class="topbar">
@@ -46,7 +47,7 @@
     <section id="map-section" class="section map-section" aria-labelledby="map-title">
       <div class="section-heading compact-heading">
         <div><p class="eyebrow dark">INTERACTIVE MAP</p><h2 id="map-title">從北境到歐洲，一站一站看</h2></div>
-        <p>切換區域查看路線，點選城市查看日期與地圖連結。虛線為航空、實線為鐵路；連線僅為示意，不含尚未確認的轉機點。</p>
+        <p>切換區域查看路線，點選城市查看日期與地圖連結。虛線為航空、實線為鐵路；航空轉機點詳列於下方航班卡。</p>
       </div>
       <div class="map-toolbar" role="group" aria-label="地圖範圍">
         <button type="button" data-map-view="europe" aria-pressed="true">歐洲 6 城</button>
@@ -57,7 +58,7 @@
       <div class="map-shell">
         <div id="trip-map" aria-label="旅程互動地圖"><p class="map-fallback">地圖載入中。若無法載入，請使用下方城市連結。</p></div>
       </div>
-      <div class="route-key" aria-label="路線圖例"><span><i class="flight-line"></i>航空（含待確認轉機）</span><span><i class="rail-line"></i>鐵路</span><span>數字＝行程順序</span></div>
+      <div class="route-key" aria-label="路線圖例"><span><i class="flight-line"></i>航空路線示意</span><span><i class="rail-line"></i>鐵路</span><span>數字＝行程順序</span></div>
       <p class="map-status" id="map-status" role="status">歐洲段：里斯本 → 波多 → 巴塞隆納 → 馬德里 → 塞維亞 → 阿姆斯特丹</p>
       <div id="map-city-list" class="map-city-list" aria-label="城市與停留日期"></div>
       <noscript><p class="map-fallback">需要啟用 JavaScript 才能顯示互動地圖。所有地點與交通資訊仍可在下方日程閱讀。</p></noscript>
@@ -95,6 +96,19 @@
       <aside class="flight-note"><strong>建議溫哥華過夜</strong><p>19:00 抵達後仍需入境、領行李與重新報到；冬季直飛黃刀鎮多在更早時段，隔日銜接較穩妥。</p></aside>
     </section>
 
+    <section class="section ticket-section" aria-labelledby="ticket-title">
+      <div class="section-heading compact-heading"><div><p class="eyebrow dark">RECOMMENDED TICKETS</p><h2 id="ticket-title">建議買成 4 張票</h2></div><p>以下均為每人經濟艙、含稅估算；短程票以加購 1 件 20–23 kg 托運行李後的總價判斷。班表與票價查核日：2026/09/19。</p></div>
+      <div class="ticket-summary"><div><span>目標總額</span><strong>NT$ 95,000–120,000</strong></div><p>低於 NT$ 100,000 可直接買；若超過 NT$ 125,000，先比對前後一天及不同票種。不要為省價拆開黃刀鎮至里斯本的轉機。</p></div>
+      <div class="ticket-grid">
+        <article class="ticket-card featured"><header><span class="ticket-number">票 1</span><span class="ticket-badge">推薦開口票</span></header><h3>中華航空 Multi-city</h3><div class="ticket-leg"><time>02/04 四</time><strong>CI0032</strong><p><b>TPE 桃園 T2</b><span>23:35</span><i>直飛</i><b>YVR 溫哥華</b><span>19:00 同日</span></p></div><div class="ticket-leg"><time>03/03 三</time><strong>CI0074</strong><p><b>AMS 阿姆斯特丹</b><span>10:40</span><i>直飛</i><b>TPE 桃園 T1</b><span>06:25 +1</span></p></div><div class="ticket-price"><span>建議成交價</span><strong>≤ NT$ 50,000</strong><small>可接受上限 NT$ 58,000</small></div><p class="ticket-advice">用「多航點」一次搜尋兩段，通常比兩張單程合理；至少選含 1 件托運行李、可付費改票的票種。</p><a href="https://www.china-airlines.com/tw/zh" target="_blank" rel="noreferrer">中華航空多航點查票 ↗</a></article>
+        <article class="ticket-card"><header><span class="ticket-number">票 2</span><span class="ticket-badge">同一張票</span></header><h3>加拿大航空 Multi-city</h3><div class="ticket-leg"><time>02/05 五</time><strong>AC0254</strong><p><b>YVR 溫哥華</b><span>14:45</span><i>直飛</i><b>YZF 黃刀鎮</b><span>17:19</span></p></div><div class="ticket-leg multi"><time>02/09 二</time><strong>AC253／110／810</strong><p><b>YZF 黃刀鎮</b><span>05:05</span><i>YVR 3:22<br>YYZ 3:15</i><b>LIS 里斯本 T1</b><span>09:20 +1</span></p></div><div class="ticket-price"><span>建議成交價</span><strong>≤ NT$ 40,000</strong><small>可接受上限 NT$ 48,000</small></div><p class="ticket-advice">三段跨洋行程必須由加拿大航空開在同一張票，讓延誤時由航空公司保護後續航班與行李。</p><a href="https://www.aircanada.com/ca/en/aco/home/book.html" target="_blank" rel="noreferrer">加拿大航空多航點查票 ↗</a></article>
+        <article class="ticket-card schedule-change"><header><span class="ticket-number">票 3</span><span class="ticket-badge">日期調整</span></header><h3>Vueling 單程</h3><div class="ticket-leg"><time>02/18 四</time><strong>VY1171</strong><p><b>OPO 波多</b><span>08:45</span><i>直飛 1:45</i><b>BCN 巴塞隆納 T1</b><span>11:30</span></p></div><div class="ticket-price"><span>含托運建議價</span><strong>NT$ 3,500–5,500</strong><small>超過 NT$ 6,500 再比價</small></div><p class="ticket-advice">目前可核實的直飛從 2/18 起飛，因此建議波多改 4 晚、巴塞隆納改 3 晚；以 Vueling 官網含行李總價為準。</p><a href="https://www.vueling.com/en" target="_blank" rel="noreferrer">Vueling 查票 ↗</a></article>
+        <article class="ticket-card"><header><span class="ticket-number">票 4</span><span class="ticket-badge">直飛</span></header><h3>Transavia 單程</h3><div class="ticket-leg"><time>02/27 六</time><strong>HV6730</strong><p><b>SVQ 塞維亞</b><span>10:10</span><i>直飛 3:05</i><b>AMS 阿姆斯特丹</b><span>13:15</span></p></div><div class="ticket-price"><span>含托運建議價</span><strong>NT$ 4,500–7,000</strong><small>超過 NT$ 8,000 再比價</small></div><p class="ticket-advice">這班能在午後抵達，仍保留完整傍晚；選含托運行李方案，不用 Basic 價格判斷是否便宜。</p><a href="https://www.transavia.com/en-EU/home/" target="_blank" rel="noreferrer">Transavia 查票 ↗</a></article>
+      </div>
+      <div class="ticket-note"><strong>價格怎麼看</strong><p>「建議成交價」是本行程的入手門檻，不是鎖定報價。CI 與 AC 兩張長程票合計若在 NT$ 90,000 內即可出票；四張票合計以 NT$ 120,000 為舒適上限。付款前再次核對機場、日期、行李、改票規則及所有轉機是否在同一張票。</p></div>
+      <details class="ticket-sources"><summary>班表與價格依據</summary><ul><li><a href="https://www.china-airlines.com/tw/zh" target="_blank" rel="noreferrer">中華航空</a>：CI0032 為使用者提供；CI0074 2027/3/3 班表為 10:40–06:25+1。</li><li><a href="https://www.aircanada.com/en-ca/flights-from-vancouver-to-yellowknife" target="_blank" rel="noreferrer">加拿大航空 YVR–YZF</a>：2027/2 月單程公開價自 CAD 255 起；AC254 班表為 14:45–17:19。</li><li>AC253／AC110／AC810 的 2027/2/9 班表組合為目前可銜接方案，YVR 與 YYZ 分別保留 3 小時以上。</li><li>VY1171 及 HV6730 為目前公布冬季班表；低成本航空顯示價通常未含托運行李。</li></ul></details>
+    </section>
+
     <section id="itinerary" class="section itinerary-section" aria-labelledby="itinerary-title">
       <div class="section-heading compact-heading"><div><p class="eyebrow dark">DAY BY DAY</p><h2 id="itinerary-title">29 日逐日行程</h2></div><p>每天保留至少一段彈性；極光夜後不安排早起長途活動，歐洲跨城日也只留輕量散步。</p></div>
       <div class="region-tabs" role="group" aria-label="篩選行程地區"><button class="active" data-region="all">全部</button><button data-region="canada">加拿大</button><button data-region="portugal">葡萄牙</button><button data-region="spain">西班牙</button><button data-region="netherlands">荷蘭</button></div>
@@ -116,7 +130,7 @@
     <figure class="visual-break amsterdam-break"><img src="./assets/amsterdam-blue-hour.jpg?v=2" width="1672" height="941" loading="lazy" decoding="async" alt="冬末藍調時刻的阿姆斯特丹運河、拱橋、腳踏車、運河船與暖色窗燈插畫"><figcaption><span>02.27—03.03</span><strong>阿姆斯特丹 · 用運河藍調收束這趟長旅</strong></figcaption></figure>
 
     <section id="budget" class="section budget-section" aria-labelledby="budget-title">
-      <div class="budget-copy"><p class="eyebrow dark">BUDGET FRAME</p><h2 id="budget-title">每人約 NT$ 30–43 萬</h2><p>以 2 位成人共用市中心 3–4 星雙人房、經濟艙、4 晚極光活動與主要博物館門票估算。不含購物。</p><div class="budget-total"><span>建議預備金</span><strong>NT$ 40,000</strong></div></div>
+      <div class="budget-copy"><p class="eyebrow dark">BUDGET FRAME</p><h2 id="budget-title">每人約 NT$ 29–40 萬</h2><p>以 2 位成人共用市中心 3–4 星雙人房、經濟艙、4 晚極光活動與主要博物館門票估算。不含購物。</p><div class="budget-total"><span>建議預備金</span><strong>NT$ 40,000</strong></div></div>
       <div id="budget-bars" class="budget-bars" aria-label="預算分配"></div>
     </section>
 
@@ -130,6 +144,6 @@
   <footer><div><strong>2027 極光與歐洲冬旅</strong><p>最後資料整理：2026.09.19 · 所有班次與價格需在付款前再次確認。</p></div><a href="#top">回到頁首 ↑</a></footer>
 
   <script src="vendor/leaflet/leaflet.js?v=3"></script>
-  <script src="app.js?v=3"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>

@@ -48,14 +48,14 @@ const transportGroups = [
     code:'CANADA', region:'加拿大', summary:'02/04–10 · 先在溫哥華過夜，再進黃刀鎮；跨洋段以同票保護轉機。',
     modes:[
       {type:'air', label:'飛機', note:'3 段航程', items:[
-        {date:'02/04', route:'台北 TPE → 溫哥華 YVR', service:'CI0032 · 23:35 → 19:00（同日）', status:'已提供', detail:'春節首日出發；與回程 CI74 合購開口票，兩段建議成交 ≤ NT$ 50,000。'},
-        {date:'02/05', route:'溫哥華 YVR → 黃刀鎮 YZF', service:'AC254 · 14:45 → 17:19 · 直飛', status:'推薦', detail:'含托運建議 ≤ NT$ 10,000；隔日銜接，保留冬季延誤緩衝。'},
-        {date:'02/09–10', route:'黃刀鎮 YZF → 里斯本 LIS', service:'AC253／AC110／AC810 · 經 YVR、YYZ', status:'推薦', detail:'三段必須同一張票；建議成交 ≤ NT$ 40,000，兩次轉機皆逾 3 小時。'}
+        {date:'02/04', route:'台北 TPE → 溫哥華 YVR', service:'CI0032 · 23:35 → 19:00（同日）', status:'已提供', detail:'春節首日出發；與回程 CI74 合購開口票。', price:'兩段合購建議 ≤ NT$ 50,000', link:'https://www.china-airlines.com/tw/zh', source:'中華航空｜班次與多航點票價'},
+        {date:'02/05', route:'溫哥華 YVR → 黃刀鎮 YZF', service:'AC254 · 14:45 → 17:19 · 直飛', status:'推薦', detail:'隔日銜接，保留冬季延誤緩衝。', price:'含托運建議 ≤ NT$ 10,000', link:'https://www.aircanada.com/ca/en/aco/home/book.html', source:'加拿大航空｜班次與票價'},
+        {date:'02/09–10', route:'黃刀鎮 YZF → 里斯本 LIS', service:'AC253／AC110／AC810 · 經 YVR、YYZ', status:'推薦', detail:'三段必須同一張票；兩次轉機皆逾 3 小時。', price:'同票建議 ≤ NT$ 40,000', link:'https://www.aircanada.com/ca/en/aco/home/book.html', source:'加拿大航空｜多航點查詢'}
       ]},
       {type:'land', label:'陸地', note:'機場、飯店與極光接駁', items:[
-        {date:'02/04', route:'YVR 機場 → Richmond／機場飯店', service:'飯店接駁優先；次選 Canada Line＋短程計程車', status:'抵達日', detail:'19:00 抵達後先入境、領行李；選有免費機場接駁的住宿最省力。'},
-        {date:'02/05・09', route:'YZF 機場 ↔ 黃刀鎮市區', service:'飯店接駁或計程車 · 約 10–15 分鐘', status:'先確認', detail:'訂房時先確認冬季接駁班次；清晨離境日請前一晚預約車輛。'},
-        {date:'02/06–08', route:'市區飯店 ↔ 極光觀測點', service:'參加含飯店接送的極光團', status:'推薦', detail:'夜間低溫且路況不熟，不建議自駕；預訂時確認接送飯店與集合時間。'}
+        {date:'02/04', route:'YVR 機場 → Richmond／機場飯店', service:'飯店接駁優先；次選 Canada Line＋短程計程車', status:'抵達日', detail:'19:00 抵達後先入境、領行李；選有免費機場接駁的住宿最省力。', price:'免費接駁／Canada Line 約 C$10 起（參考）', link:'https://www.translink.ca/transit-fares/pricing-and-fare-zones', source:'TransLink｜票價與分區'},
+        {date:'02/05・09', route:'YZF 機場 ↔ 黃刀鎮市區', service:'飯店接駁或計程車 · 約 10–15 分鐘', status:'先確認', detail:'官方確認無公共運輸；清晨離境請前一晚預約計程車。', price:'飯店接駁常免費／計程車約 C$20–30（估算）', link:'https://www.inf.gov.nt.ca/en/services/airports/traveller-information', source:'黃刀鎮機場｜計程車與接駁'},
+        {date:'02/06–08', route:'市區飯店 ↔ 極光觀測點', service:'參加含飯店接送的極光團', status:'推薦', detail:'夜間低溫且路況不熟，不建議自駕；預訂時確認接送飯店與集合時間。', price:'接送通常含在團費內；依業者方案', link:'https://exploreyellowknife.com/plan-your-trip', source:'Explore Yellowknife｜業者資訊'}
       ]}
     ]
   },
@@ -63,16 +63,16 @@ const transportGroups = [
     code:'EUROPE', region:'歐洲', summary:'02/10–03/03 · 遠距離跨國用直飛，葡萄牙與西班牙城際移動以鐵路為主。',
     modes:[
       {type:'air', label:'飛機', note:'2 段歐洲內飛＋返台', items:[
-        {date:'02/18', route:'波多 OPO → 巴塞隆納 BCN', service:'VY1171 · 08:45 → 11:30 · 直飛', status:'推薦', detail:'含托運 NT$ 3,500–5,500；以航空公司官網含行李總價判斷。'},
-        {date:'02/27', route:'塞維亞 SVQ → 阿姆斯特丹 AMS', service:'HV6730 · 10:10 → 13:15 · 直飛', status:'推薦', detail:'含托運 NT$ 4,500–7,000；午後抵達，仍保留傍晚散步時間。'},
-        {date:'03/03–04', route:'阿姆斯特丹 AMS → 台北 TPE', service:'CI74 · 10:40 → 06:25+1 · 直飛', status:'推薦', detail:'與 CI0032 合購開口票；國際線建議提前 3 小時抵達 Schiphol。'}
+        {date:'02/18', route:'波多 OPO → 巴塞隆納 BCN', service:'VY1171 · 08:45 → 11:30 · 直飛', status:'推薦', detail:'以航空公司官網加入托運後的總價判斷。', price:'含托運建議 NT$ 3,500–5,500', link:'https://www.vueling.com/en', source:'Vueling｜班次與含行李票價'},
+        {date:'02/27', route:'塞維亞 SVQ → 阿姆斯特丹 AMS', service:'HV6730 · 10:10 → 13:15 · 直飛', status:'推薦', detail:'午後抵達，仍保留傍晚散步時間。', price:'含托運建議 NT$ 4,500–7,000', link:'https://www.transavia.com/en-EU/home/', source:'Transavia｜班次與含行李票價'},
+        {date:'03/03–04', route:'阿姆斯特丹 AMS → 台北 TPE', service:'CI74 · 10:40 → 06:25+1 · 直飛', status:'推薦', detail:'國際線建議提前 3 小時抵達 Schiphol。', price:'與 CI0032 合購建議 ≤ NT$ 50,000', link:'https://www.china-airlines.com/tw/zh', source:'中華航空｜班次與多航點票價'}
       ]},
       {type:'land', label:'陸地', note:'3 段城際列車＋機場接駁', items:[
-        {date:'02/14', route:'里斯本 Oriente → 波多 Campanhã', service:'CP Alfa Pendular／Intercidades · 約 3 小時', status:'待開賣', detail:'選中午前抵達班次；到站後以地鐵或計程車前往市中心住宿。'},
-        {date:'02/18', route:'巴塞隆納機場 BCN → 市區', service:'Aerobús 優先；行李多則搭計程車', status:'抵達日', detail:'Aerobús 可直達 Plaça Catalunya；住宿不在沿線時再轉地鐵。'},
-        {date:'02/21', route:'Barcelona Sants → Madrid Atocha', service:'AVE／Avlo 高鐵 · 約 2.5–3 小時', status:'待開賣', detail:'建議上午班；車站進市中心後可直接入住或寄放行李。'},
-        {date:'02/24', route:'Madrid Atocha → Sevilla Santa Justa', service:'AVE／Avlo 高鐵 · 約 2.5–3 小時', status:'待開賣', detail:'選中午前抵達；Santa Justa 至舊城住宿以計程車最省力。'},
-        {date:'02/27・03/03', route:'AMS Schiphol ↔ 阿姆斯特丹市區', service:'NS 火車優先 · 約 15–20 分鐘', status:'推薦', detail:'中央車站周邊搭火車；其他區域可依住宿位置改選巴士或計程車。'}
+        {date:'02/14', route:'里斯本 Oriente → 波多 Campanhã', service:'CP Alfa Pendular／Intercidades · 約 3 小時', status:'待開賣', detail:'選中午前抵達班次；CP 官網通常約出發前 60 天開賣。', price:'2026 參考：IC 二等 €28.05／AP Turística €35.70', link:'https://www1.cp.pt/passageiros/en/buy-tickets', source:'CP 國鐵｜班次與票價'},
+        {date:'02/18', route:'巴塞隆納機場 BCN → 市區', service:'Aerobús · 24 小時營運', status:'抵達日', detail:'直達 Plaça Catalunya；住宿不在沿線時再轉地鐵。', price:'2026 參考：單程 €7.75／來回 €13.30', link:'https://aerobusbarcelona.es/en/rates/', source:'Aerobús｜班次、站點與票價'},
+        {date:'02/21', route:'Barcelona Sants → Madrid Atocha', service:'AVE／Avlo 高鐵 · 約 2.5–3 小時', status:'待開賣', detail:'建議上午班；2027 車次尚未開放查詢。', price:'Avlo 官網自 €7；實際建議抓 €20–60', link:'https://www.renfe.com/es/en', source:'Renfe｜官方班次與購票'},
+        {date:'02/24', route:'Madrid Atocha → Sevilla Santa Justa', service:'AVE／Avlo 高鐵 · 約 2.5–3 小時', status:'待開賣', detail:'選中午前抵達；2027 車次尚未開放查詢。', price:'Avlo 官網自 €7；實際建議抓 €20–60', link:'https://www.renfe.com/es/en', source:'Renfe｜官方班次與購票'},
+        {date:'02/27・03/03', route:'AMS Schiphol ↔ 阿姆斯特丹市區', service:'NS 火車 · 約 17 分鐘', status:'推薦', detail:'中央車站周邊搭火車；其他區域依住宿位置改選巴士。', price:'參考：單程約 €5–6／Amsterdam Travel Ticket 1 日 €20', link:'https://www.ns.nl/en/travel/destinations/taking-the-train-to-the-airport', source:'NS 荷鐵｜班次與票價'}
       ]}
     ]
   }
@@ -94,7 +94,7 @@ document.querySelectorAll('.region-tabs button').forEach(button => button.addEve
 
 document.querySelector('#stay-grid').innerHTML = stays.map((stay,i)=>`<article class="stay-card"><span class="stay-number">${String(i+1).padStart(2,'0')}</span><span class="city">${stay.area}</span><h3>${stay.city} · ${stay.name}</h3><p>${stay.desc}</p><span class="stay-rate">${stay.rate}</span><div class="stay-options">${stay.opts.map(o=>`<a href="${o[1]}" target="_blank" rel="noreferrer">${o[0]} ↗</a>`).join('')}</div></article>`).join('');
 
-document.querySelector('#transport-groups').innerHTML = transportGroups.map(group=>`<article class="transport-region"><header class="transport-region-head"><div><span>${group.code}</span><h3>${group.region}</h3></div><p>${group.summary}</p></header><div class="transport-mode-grid">${group.modes.map(mode=>`<section class="mode-panel mode-${mode.type}" aria-label="${group.region}${mode.label}"><header><span class="mode-code">${mode.type==='air'?'AIR':'LAND'}</span><div><h4>${mode.label}</h4><p>${mode.note}</p></div></header><div class="transport-list">${mode.items.map(item=>`<article class="transport-item"><time>${item.date}</time><div class="transport-item-main"><h5>${item.route}</h5><strong>${item.service}</strong><p>${item.detail}</p></div><span class="transport-chip ${['已提供','推薦'].includes(item.status)?'ready':'pending'}">${item.status}</span></article>`).join('')}</div></section>`).join('')}</div></article>`).join('');
+document.querySelector('#transport-groups').innerHTML = transportGroups.map(group=>`<article class="transport-region"><header class="transport-region-head"><div><span>${group.code}</span><h3>${group.region}</h3></div><p>${group.summary}</p></header><div class="transport-mode-grid">${group.modes.map(mode=>`<section class="mode-panel mode-${mode.type}" aria-label="${group.region}${mode.label}"><header><span class="mode-code">${mode.type==='air'?'AIR':'LAND'}</span><div><h4>${mode.label}</h4><p>${mode.note}</p></div></header><div class="transport-list">${mode.items.map(item=>`<article class="transport-item"><time>${item.date}</time><div class="transport-item-main"><h5>${item.route}</h5><strong>${item.service}</strong><p>${item.detail}</p><div class="transport-buy"><span>${item.price}</span><a href="${item.link}" target="_blank" rel="noreferrer">${item.source} ↗</a></div></div><span class="transport-chip ${['已提供','推薦'].includes(item.status)?'ready':'pending'}">${item.status}</span></article>`).join('')}</div></section>`).join('')}</div></article>`).join('');
 
 const maxBudget = Math.max(...budgets.map(b=>b[2]));
 document.querySelector('#budget-bars').innerHTML = budgets.map(b=>`<div class="budget-row"><span>${b[0]}</span><div class="bar-track"><div class="bar-fill" style="width:${Math.round(b[2]/maxBudget*100)}%"></div></div><strong>${Math.round(b[1]/1000)}–${Math.round(b[2]/1000)}K</strong></div>`).join('');

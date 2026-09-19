@@ -1,0 +1,24 @@
+.map-toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+.map-toolbar button{border:1px solid #b8cbd1;background:white;color:#0b2b46;border-radius:8px;padding:12px 18px;min-height:44px;font:700 14px var(--sans);cursor:pointer}
+.map-toolbar button[aria-pressed="true"]{background:#0b2b46;border-color:#0b2b46;color:white}
+.map-toolbar button:focus-visible,.map-city button:focus-visible{outline:3px solid #e29148;outline-offset:3px}
+.map-toolbar #map-reset{margin-left:auto}
+.map-shell{margin:16px 0 0;border:1px solid #bdcfd4;border-radius:12px;overflow:hidden;isolation:isolate;background:#dcebf0}
+#trip-map{height:550px;min-height:0;width:100%;background:#dcebf0;z-index:0;font-family:var(--sans)}
+.leaflet-container .leaflet-tile{max-width:none!important;max-height:none!important}
+.leaflet-tooltip.city-label{border:0;box-shadow:0 2px 8px #0b2b4626;background:#fffffff2;color:#0b2b46;font:700 13px var(--sans);padding:5px 9px;border-radius:5px}
+.trip-pin .custom-marker{border:2px solid white;box-shadow:0 2px 6px #0b2b4655}
+.route-key{display:flex;flex-wrap:wrap;gap:12px 24px;font-size:13px;color:#405c69;margin-top:16px}
+.route-key span{display:flex;align-items:center;gap:8px}
+.route-key i{display:inline-block;width:30px;border-top:3px dashed #27677e}
+.route-key .rail-line{border-top:4px solid #ac571b}
+.map-status{font-size:14px;color:#405c69;min-height:24px;margin:12px 0 20px}
+.map-city-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.map-city{padding:16px;border:1px solid #cbd8dc;background:#fff;border-radius:8px}
+.map-city[hidden]{display:none}
+.map-city button{display:flex;align-items:center;gap:10px;border:0;background:transparent;color:#0b2b46;font:inherit;cursor:pointer;padding:0;min-height:44px;text-align:left}
+.map-city button span{display:grid;place-items:center;border-radius:50%;background:#edf3f4;width:28px;height:28px;font-size:13px}
+.map-city small{display:block;color:#506c79;margin:2px 0 8px}
+.map-city a{display:inline-flex;align-items:center;min-height:32px;font-size:13px;color:#1b6174;text-underline-offset:3px}
+.map-toolbar button:disabled,.map-city button:disabled{cursor:default;opacity:.65}
+@media(max-width:600px){#trip-map{height:440px}.map-toolbar{gap:6px}.map-toolbar button{padding:10px 12px}.map-toolbar #map-reset{margin-left:0}.map-city-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.map-city{padding:12px}.map-shell{margin-inline:0}.route-key{gap:8px 16px}.leaflet-tooltip.city-label{font-size:12px;padding:4px 6px}}

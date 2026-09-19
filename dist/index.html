@@ -10,8 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ3ynhOdNXrLwTjoZBVo6N5Y+6Ski0M=" crossorigin="">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="map.css?v=3">
 </head>
 <body>
   <header class="topbar">
@@ -44,13 +45,21 @@
 
     <section id="map-section" class="section map-section" aria-labelledby="map-title">
       <div class="section-heading compact-heading">
-        <div><p class="eyebrow dark">INTERACTIVE MAP</p><h2 id="map-title">跨越 17,000 公里的旅程</h2></div>
-        <p>點選地圖標記查看停留日期；航線為示意，實際飛行與轉機仍以出票結果為準。</p>
+        <div><p class="eyebrow dark">INTERACTIVE MAP</p><h2 id="map-title">從北境到歐洲，一站一站看</h2></div>
+        <p>切換區域查看路線，點選城市查看日期與地圖連結。虛線為航空、實線為鐵路；連線僅為示意，不含尚未確認的轉機點。</p>
+      </div>
+      <div class="map-toolbar" role="group" aria-label="地圖範圍">
+        <button type="button" data-map-view="europe" aria-pressed="true">歐洲 6 城</button>
+        <button type="button" data-map-view="canada" aria-pressed="false">加拿大</button>
+        <button type="button" data-map-view="world" aria-pressed="false">全程含回台</button>
+        <button type="button" id="map-reset">重設視野</button>
       </div>
       <div class="map-shell">
-        <div id="trip-map" aria-label="旅程互動地圖"></div>
-        <div class="map-legend" aria-label="地圖圖例"><span><i class="dot canada"></i>加拿大</span><span><i class="dot iberia"></i>伊比利</span><span><i class="dot nl"></i>荷蘭</span></div>
+        <div id="trip-map" aria-label="旅程互動地圖"><p class="map-fallback">地圖載入中。若無法載入，請使用下方城市連結。</p></div>
       </div>
+      <div class="route-key" aria-label="路線圖例"><span><i class="flight-line"></i>航空（含待確認轉機）</span><span><i class="rail-line"></i>鐵路</span><span>數字＝行程順序</span></div>
+      <p class="map-status" id="map-status" role="status">歐洲段：里斯本 → 波多 → 巴塞隆納 → 馬德里 → 塞維亞 → 阿姆斯特丹</p>
+      <div id="map-city-list" class="map-city-list" aria-label="城市與停留日期"></div>
       <noscript><p class="map-fallback">需要啟用 JavaScript 才能顯示互動地圖。所有地點與交通資訊仍可在下方日程閱讀。</p></noscript>
     </section>
 
@@ -120,7 +129,7 @@
 
   <footer><div><strong>2027 極光與歐洲冬旅</strong><p>最後資料整理：2026.09.19 · 所有班次與價格需在付款前再次確認。</p></div><a href="#top">回到頁首 ↑</a></footer>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="app.js"></script>
+  <script src="vendor/leaflet/leaflet.js?v=3"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>

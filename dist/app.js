@@ -78,15 +78,74 @@ document.querySelector('#budget-bars').innerHTML = budgets.map(b=>`<div class="b
 
 const stops = [['台北','02/04 出發',25.08,121.23,'#0b2b46'],['溫哥華','02/04–05 · 1 晚',49.20,-123.18,'#49d799'],['黃刀鎮','02/05–09 · 4 晚',62.47,-114.37,'#49d799'],['里斯本','02/10–14 · 4 晚',38.72,-9.14,'#f09247'],['波多','02/14–17 · 3 晚',41.15,-8.61,'#f09247'],['巴塞隆納','02/17–21 · 4 晚',41.39,2.17,'#f09247'],['馬德里','02/21–24 · 3 晚',40.42,-3.70,'#f09247'],['塞維亞','02/24–27 · 3 晚',37.39,-5.99,'#f09247'],['阿姆斯特丹','02/27–03/03 · 4 晚',52.37,4.90,'#4f8fbd']];
 
+const mapStatus = document.querySelector('#map-status');
+const mapButtons = [...document.querySelectorAll('[data-map-view]')];
+const mapLink = stop => `https://www.google.com/maps/search/?api=1&query=${stop[2]},${stop[3]}`;
+document.querySelector('#map-city-list').innerHTML = stops.map((s,i)=>`<article class="map-city"><button type="button" data-map-stop="${i}" aria-label="在地圖查看${s[0]}"><span>${i+1}</span><strong>${s[0]}</strong></button><small>${s[1]}${i===0?' · 03/04 回台':''}</small><a href="${mapLink(s)}" target="_blank" rel="noreferrer">Google 地圖 ↗</a></article>`).join('');
+
+// Split at the date line: Taipei → Vancouver crosses the Pacific, not Eurasia.
+function mapLeg(a,b) {
+  const start = [a[2],a[3]], end = [b[2],b[3]];
+  if (Math.abs(end[1]-start[1])<=180) return [start,end];
+  const unwrapped = end[1] + (end[1]<start[1] ? 360 : -360);
+  const edge = unwrapped>180 ? 180 : -180;
+  const latitude = start[0]+(end[0]-start[0])*(edge-start[1])/(unwrapped-start[1]);
+  return [[start,[latitude,edge]],[[latitude,-edge],end]];
+}
+
 if (window.L) {
-  const map = L.map('trip-map',{scrollWheelZoom:false,worldCopyJump:true}).setView([42,-28],2);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
-  const points = [];
-  stops.forEach((s,i)=>{
-    const icon=L.divIcon({className:'',html:`<span class="custom-marker" style="--marker:${s[4]}">${i+1}</span>`,iconSize:[30,30],iconAnchor:[15,15]});
-    L.marker([s[2],s[3]],{icon}).addTo(map).bindPopup(`<strong>${s[0]}</strong><small>${s[1]}</small>`);
-    points.push([s[2],s[3]]);
-  });
-  L.polyline(points,{color:'#0b2b46',weight:2,opacity:.65,dashArray:'7 8'}).addTo(map);
-  map.fitBounds(L.latLngBounds(points),{padding:[40,40]});
+  document.querySelector('#trip-map').replaceChildren();
+  const map = L.map('trip-map',{scrollWheelZoom:false,worldCopyJump:true,minZoom:0,zoomSnap:.25});
+  let activeView = 'europe';
+  let tileFailed = false;
+  const views = {europe:[3,4,5,6,7,8],canada:[1,2],world:stops.map((_,i)=>i)};
+  const captions = {europe:'歐洲段：里斯本 → 波多 → 巴塞隆納 → 馬德里 → 塞維亞 → 阿姆斯特丹',canada:'加拿大段：溫哥華過夜 → 黃刀鎮 4 晚極光；接往歐洲的轉機點待確認。',world:'全程：台灣 → 加拿大 → 葡萄牙 → 西班牙 → 荷蘭 → 台灣。跨太平洋連線於地圖兩側銜接。'};
+  const layer = L.layerGroup().addTo(map);
+  const markers = [];
+  const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+  const updateStatus = () => { mapStatus.textContent = captions[activeView] + (tileFailed?' 部分底圖無法載入，可使用下方 Google 地圖連結。':''); };
+  tiles.on('tileerror',()=>{tileFailed=true;updateStatus();});
+  function fitView() {
+    map.invalidateSize();
+    const bounds = activeView==='world' ? [[5,-180],[72,180]] : views[activeView].map(i=>[stops[i][2],stops[i][3]]);
+    map.fitBounds(bounds,{padding:[70,55],maxZoom:activeView==='europe'?5:4,animate:false});
+  }
+  function showView(view) {
+    activeView=view;
+    layer.clearLayers();
+    map.closePopup();
+    const indices=views[view];
+    for(let i=0;i<stops.length;i++) {
+      const next=(i+1)%stops.length;
+      if(!indices.includes(i)||!indices.includes(next)) continue;
+      const rail=[3,5,6].includes(i);
+      L.polyline(mapLeg(stops[i],stops[next]),{color:rail?'#ac571b':'#27677e',weight:rail?4:3,opacity:.85,dashArray:rail?null:'8 7'}).addTo(layer)
+        .bindPopup(`${stops[i][0]} → ${stops[next][0]}<br>${rail?'鐵路':'航空'}路線示意${i===2?'（轉機點待確認）':''}`);
+    }
+    indices.forEach(i=>{
+      const s=stops[i];
+      const icon=L.divIcon({className:'trip-pin',html:`<span class="custom-marker" style="--marker:${s[4]}">${i+1}</span>`,iconSize:[30,30],iconAnchor:[15,15]});
+      markers[i]=L.marker([s[2],s[3]],{icon,title:s[0],alt:s[0]}).addTo(layer)
+        .bindTooltip(s[0],{permanent:view!=='world',direction:[3,4].includes(i)?'left':'right',offset:[3,4].includes(i)?[-18,0]:[18,0],className:'city-label'})
+        .bindPopup(`<strong>${i+1}. ${s[0]}</strong><small>${s[1]}${i===0?' · 03/04 回台':''}</small><a href="${mapLink(s)}" target="_blank" rel="noreferrer">開啟 Google 地圖 ↗</a>`);
+    });
+    mapButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mapView===view)));
+    document.querySelectorAll('.map-city').forEach((card,i)=>{card.hidden=!indices.includes(i);});
+    updateStatus();
+    fitView();
+  }
+  mapButtons.forEach(b=>b.addEventListener('click',()=>showView(b.dataset.mapView)));
+  document.querySelector('#map-reset').addEventListener('click',fitView);
+  document.querySelectorAll('[data-map-stop]').forEach(b=>b.addEventListener('click',()=>{
+    const i=Number(b.dataset.mapStop);
+    map.setView([stops[i][2],stops[i][3]],8,{animate:false});
+    markers[i].openPopup();
+    document.querySelector('#trip-map').scrollIntoView({behavior:'smooth',block:'center'});
+  }));
+  showView('europe');
+  if(window.ResizeObserver) new ResizeObserver(()=>fitView()).observe(document.querySelector('#trip-map'));
+} else {
+  document.querySelector('.map-fallback').textContent='互動地圖未能載入，請使用下方城市的 Google 地圖連結。';
+  mapStatus.textContent='各城市日期與外部地圖仍可使用。';
+  document.querySelectorAll('[data-map-view], [data-map-stop], #map-reset').forEach(b=>{b.disabled=true;});
 }

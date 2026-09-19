@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2027 年 2 月台灣、黃刀鎮、葡萄牙、西班牙與荷蘭的 29 日冬季旅程規劃。">
+  <meta name="theme-color" content="#071b2f">
+  <title>2027 極光與歐洲冬旅</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071b2f'/%3E%3Cpath d='M8 35c12-17 21 12 48-15-9 25-30 28-48 15Z' fill='%2375f3b0'/%3E%3Cpath d='M19 48h26' stroke='%23d8eff7' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ3ynhOdNXrLwTjoZBVo6N5Y+6Ski0M=" crossorigin="">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="回到頁首"><span class="brand-mark">N29</span><span>極光・伊比利・運河</span></a>
+    <nav aria-label="主要導覽">
+      <a href="#map-section">地圖</a><a href="#flights">交通</a><a href="#itinerary">日程</a><a href="#stays">住宿</a><a href="#budget">預算</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <img class="hero-image" src="assets/yellowknife-aurora.png" alt="綠色極光映照黃刀鎮冰湖、森林、小木屋與帳篷的冬夜插畫">
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">2027.02.04 — 03.04 · 29 DAYS</p>
+        <h1 id="page-title">從極光追到<br><em>南歐的冬陽</em></h1>
+        <p class="hero-lead">台灣出發，穿越黃刀鎮的冰雪夜、伊比利半島的古城，再以阿姆斯特丹運河作結。</p>
+        <div class="hero-actions"><a class="button button-primary" href="#route">查看完整路線</a><a class="button button-ghost" href="#flights">CI0032 航班</a></div>
+      </div>
+      <div class="trip-stats" aria-label="旅程摘要">
+        <div><strong>29</strong><span>日</span></div><div><strong>8</strong><span>城市基地</span></div><div><strong>4</strong><span>極光夜</span></div><div><strong>4</strong><span>國家</span></div>
+      </div>
+    </section>
+
+    <section class="travel-alert" aria-label="重要提醒">
+      <span class="alert-index">01</span>
+      <div><strong>春節首日出發</strong><p>2/4 正逢台灣春節連假首日。CI0032 與加拿大國內線建議分開看待：前者先鎖位，後者以隔日銜接降低延誤風險。</p></div>
+      <a href="#checklist">查看預訂順序</a>
+    </section>
+
+    <section id="map-section" class="section map-section" aria-labelledby="map-title">
+      <div class="section-heading compact-heading">
+        <div><p class="eyebrow dark">INTERACTIVE MAP</p><h2 id="map-title">跨越 17,000 公里的旅程</h2></div>
+        <p>點選地圖標記查看停留日期；航線為示意，實際飛行與轉機仍以出票結果為準。</p>
+      </div>
+      <div class="map-shell">
+        <div id="trip-map" aria-label="旅程互動地圖"></div>
+        <div class="map-legend" aria-label="地圖圖例"><span><i class="dot canada"></i>加拿大</span><span><i class="dot iberia"></i>伊比利</span><span><i class="dot nl"></i>荷蘭</span></div>
+      </div>
+      <noscript><p class="map-fallback">需要啟用 JavaScript 才能顯示互動地圖。所有地點與交通資訊仍可在下方日程閱讀。</p></noscript>
+    </section>
+
+    <section id="route" class="section route-section" aria-labelledby="route-title">
+      <div class="section-heading">
+        <p class="eyebrow dark">THE ROUTE</p>
+        <h2 id="route-title">一條從北緯 62° 展開的冬季長線</h2>
+        <p>先在溫哥華緩衝轉機，再前往黃刀鎮；歐洲段由西向東，減少回頭路。</p>
+      </div>
+      <div class="route-board" role="img" aria-label="台北、溫哥華、黃刀鎮、里斯本、波多、巴塞隆納、馬德里、塞維亞、阿姆斯特丹、台北的路線示意">
+        <div class="route-line"></div>
+        <ol class="route-stops">
+          <li><span>01</span><strong>台北</strong><small>TPE</small></li>
+          <li><span>02</span><strong>溫哥華</strong><small>YVR</small></li>
+          <li><span>03</span><strong>黃刀鎮</strong><small>YZF</small></li>
+          <li><span>04</span><strong>里斯本</strong><small>LIS</small></li>
+          <li><span>05</span><strong>波多</strong><small>OPO</small></li>
+          <li><span>06</span><strong>巴塞隆納</strong><small>BCN</small></li>
+          <li><span>07</span><strong>馬德里</strong><small>MAD</small></li>
+          <li><span>08</span><strong>塞維亞</strong><small>SVQ</small></li>
+          <li><span>09</span><strong>阿姆斯特丹</strong><small>AMS</small></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="flights" class="section flight-highlight" aria-labelledby="flight-title">
+      <div class="flight-date"><span>FEB</span><strong>04</strong><small>THU</small></div>
+      <div class="flight-main">
+        <p class="eyebrow dark">REFERENCE FLIGHT · 已納入</p>
+        <h2 id="flight-title">CI0032 · 台北 → 溫哥華</h2>
+        <div class="flight-route"><div><strong>23:35</strong><span>TPE · 2/4</span></div><div class="plane-line" aria-hidden="true"><span>✦</span></div><div><strong>19:00</strong><span>YVR · 2/4</span></div></div>
+      </div>
+      <aside class="flight-note"><strong>建議溫哥華過夜</strong><p>19:00 抵達後仍需入境、領行李與重新報到；冬季直飛黃刀鎮多在更早時段，隔日銜接較穩妥。</p></aside>
+    </section>
+
+    <section id="itinerary" class="section itinerary-section" aria-labelledby="itinerary-title">
+      <div class="section-heading compact-heading"><div><p class="eyebrow dark">DAY BY DAY</p><h2 id="itinerary-title">29 日逐日行程</h2></div><p>每天保留至少一段彈性；極光夜後不安排早起長途活動，歐洲跨城日也只留輕量散步。</p></div>
+      <div class="region-tabs" role="group" aria-label="篩選行程地區"><button class="active" data-region="all">全部</button><button data-region="canada">加拿大</button><button data-region="portugal">葡萄牙</button><button data-region="spain">西班牙</button><button data-region="netherlands">荷蘭</button></div>
+      <div id="itinerary-list" class="itinerary-list"></div>
+    </section>
+
+    <figure class="visual-break"><img src="assets/iberia-winter.png" loading="lazy" alt="里斯本電車、波多河岸、巴塞隆納現代主義建築、馬德里廣場與塞維亞橘樹庭院交織的伊比利半島插畫"><figcaption><span>02.10—02.26</span><strong>伊比利半島 · 從大西洋藍走進安達魯西亞暖色</strong></figcaption></figure>
+
+    <section id="stays" class="section stays-section" aria-labelledby="stays-title">
+      <div class="section-heading compact-heading"><div><p class="eyebrow dark">WHERE TO STAY</p><h2 id="stays-title">住宿基地</h2></div><p>以車站或舊城步行圈為主，降低冬季拖行李與晚間轉乘負擔。價格為雙人房估算，實際以訂房日為準。</p></div>
+      <div id="stay-grid" class="stay-grid"></div>
+    </section>
+
+    <section class="section transport-section" aria-labelledby="transport-title">
+      <div class="section-heading compact-heading"><div><p class="eyebrow">MOVE SMART</p><h2 id="transport-title">跨城交通總表</h2></div><p>所有跨國段優先選同張票或至少預留一晚緩衝；歐洲段則以市中心到市中心效率排序。</p></div>
+      <div class="table-wrap"><table><thead><tr><th>日期</th><th>路線</th><th>建議方式</th><th>狀態／提醒</th></tr></thead><tbody id="transport-body"></tbody></table></div>
+    </section>
+
+    <figure class="visual-break amsterdam-break"><img src="assets/amsterdam-blue-hour.png" loading="lazy" alt="冬末藍調時刻的阿姆斯特丹運河、拱橋、腳踏車、運河船與暖色窗燈插畫"><figcaption><span>02.27—03.03</span><strong>阿姆斯特丹 · 用運河藍調收束這趟長旅</strong></figcaption></figure>
+
+    <section id="budget" class="section budget-section" aria-labelledby="budget-title">
+      <div class="budget-copy"><p class="eyebrow dark">BUDGET FRAME</p><h2 id="budget-title">每人約 NT$ 30–43 萬</h2><p>以 2 位成人共用市中心 3–4 星雙人房、經濟艙、4 晚極光活動與主要博物館門票估算。不含購物。</p><div class="budget-total"><span>建議預備金</span><strong>NT$ 40,000</strong></div></div>
+      <div id="budget-bars" class="budget-bars" aria-label="預算分配"></div>
+    </section>
+
+    <section id="checklist" class="section checklist-section" aria-labelledby="check-title">
+      <div class="section-heading compact-heading"><div><p class="eyebrow dark">BOOKING ORDER</p><h2 id="check-title">照這個順序預訂</h2></div><p>先處理價格波動最大、替代性最低的項目；每一次訂票後都回來更新時間與取消條款。</p></div>
+      <ol class="booking-list"><li><span>現在</span><div><strong>CI0032、加拿大內陸段與黃刀住宿</strong><p>春節出發與極光旺季重疊，先鎖定可改票方案。</p></div></li><li><span>接著</span><div><strong>4 晚極光活動與極地衣物</strong><p>建議「極光追獵＋固定營地」各半，分散天候風險。</p></div></li><li><span>出票後</span><div><strong>黃刀鎮 → 里斯本、塞維亞 → 阿姆斯特丹</strong><p>避免自行轉機；冬季樞紐至少保留 3 小時。</p></div></li><li><span>60–90 天</span><div><strong>葡萄牙、西班牙城際列車</strong><p>CP 與 Renfe 開賣後選中午前後班次，保留退改彈性。</p></div></li><li><span>30–60 天</span><div><strong>熱門景點時段</strong><p>聖家堂、阿爾罕布拉以外本案的皇宮、美術館與梵谷博物館依序處理。</p></div></li></ol>
+      <div class="docs-grid"><article><span>CANADA</span><h3>加拿大 eTA</h3><p>持台灣外交部核發、含身分證字號的護照搭機入境通常須申請 eTA；換新護照需重新申請。</p><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta.html" target="_blank" rel="noreferrer">加拿大政府官方資訊 ↗</a></article><article><span>EUROPE</span><h3>EES／ETIAS</h3><p>2027 年規定仍可能處於上線或寬限階段，請在出發前 3 個月及 1 週各查一次官方公告。</p><a href="https://travel-europe.europa.eu/" target="_blank" rel="noreferrer">歐盟官方資訊 ↗</a></article><article><span>WINTER</span><h3>零下 20–40°C</h3><p>黃刀鎮以租借極地外套、雪褲、手套與雪靴為主；相機電池貼身保暖並準備備用電池。</p><a href="https://exploreyellowknife.com/plan-your-trip" target="_blank" rel="noreferrer">黃刀旅遊資訊 ↗</a></article></div>
+    </section>
+  </main>
+
+  <footer><div><strong>2027 極光與歐洲冬旅</strong><p>最後資料整理：2026.09.19 · 所有班次與價格需在付款前再次確認。</p></div><a href="#top">回到頁首 ↑</a></footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>

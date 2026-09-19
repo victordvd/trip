@@ -126,7 +126,7 @@ if (window.L) {
       const s=stops[i];
       const icon=L.divIcon({className:'trip-pin',html:`<span class="custom-marker" style="--marker:${s[4]}">${i+1}</span>`,iconSize:[30,30],iconAnchor:[15,15]});
       markers[i]=L.marker([s[2],s[3]],{icon,title:s[0],alt:s[0]}).addTo(layer)
-        .bindTooltip(s[0],{permanent:view!=='world',direction:[3,4].includes(i)?'left':'right',offset:[3,4].includes(i)?[-18,0]:[18,0],className:'city-label'})
+        .bindTooltip(s[0],{permanent:view!=='world',direction:[3,4,8].includes(i)?'left':'right',offset:[3,4,8].includes(i)?[-18,0]:[18,0],className:'city-label'})
         .bindPopup(`<strong>${i+1}. ${s[0]}</strong><small>${s[1]}${i===0?' · 03/04 回台':''}</small><a href="${mapLink(s)}" target="_blank" rel="noreferrer">開啟 Google 地圖 ↗</a>`);
     });
     mapButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mapView===view)));

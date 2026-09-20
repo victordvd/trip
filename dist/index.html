@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=3">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <link rel="stylesheet" href="map.css?v=3">
   <link rel="stylesheet" href="flight.css?v=5">
   <link rel="stylesheet" href="transport.css?v=7">
@@ -20,7 +20,7 @@
   <header class="topbar">
     <a class="brand" href="#top" aria-label="回到頁首"><span class="brand-mark">N29</span><span>極光・伊比利・運河</span></a>
     <nav aria-label="主要導覽">
-      <a href="#map-section">地圖</a><a href="#transport">交通</a><a href="#itinerary">日程</a><a href="#stays">住宿</a><a href="#budget">預算</a>
+      <a href="#map-section">地圖</a><a href="#transport">交通</a><a href="#itinerary">日程</a><a href="#stays">住宿</a><a href="#budget">預算</a><a href="#preparation">準備</a>
     </nav>
   </header>
 
@@ -136,6 +136,21 @@
       <div id="budget-bars" class="budget-bars" aria-label="預算分配"></div>
     </section>
 
+    <section id="preparation" class="section preparation-section" aria-labelledby="preparation-title">
+      <div class="section-heading compact-heading"><div><p class="eyebrow">READY TO GO</p><h2 id="preparation-title">出發前，一項一項準備好</h2></div><p>依建議完成日期排列；每項同時標出旅途中真正會用到的日期與地點。勾選狀態只保存在這台裝置。</p></div>
+      <div class="preparation-overview">
+        <div class="preparation-progress"><span id="preparation-progress-label">已完成 0／0 項</span><div class="preparation-progress-track" aria-hidden="true"><span id="preparation-progress-bar"></span></div></div>
+        <div class="preparation-filters" role="group" aria-label="篩選準備項目">
+          <button type="button" class="active" data-preparation-filter="all" aria-pressed="true">全部</button>
+          <button type="button" data-preparation-filter="pending" aria-pressed="false">待完成</button>
+          <button type="button" data-preparation-filter="done" aria-pressed="false">已完成</button>
+        </div>
+      </div>
+      <p id="preparation-status" class="sr-only" role="status" aria-live="polite"></p>
+      <div id="preparation-list" class="preparation-list"></div>
+      <noscript><p class="preparation-noscript">啟用 JavaScript 後即可查看並勾選完整準備清單。</p></noscript>
+    </section>
+
     <section id="checklist" class="section checklist-section" aria-labelledby="check-title">
       <div class="section-heading compact-heading"><div><p class="eyebrow dark">BOOKING ORDER</p><h2 id="check-title">照這個順序預訂</h2></div><p>先處理價格波動最大、替代性最低的項目；每一次訂票後都回來更新時間與取消條款。</p></div>
       <ol class="booking-list"><li><span>現在</span><div><strong>CI0032、加拿大內陸段與黃刀住宿</strong><p>春節出發與極光旺季重疊，先鎖定可改票方案。</p></div></li><li><span>接著</span><div><strong>4 晚極光活動與極地衣物</strong><p>建議「極光追獵＋固定營地」各半，分散天候風險。</p></div></li><li><span>出票後</span><div><strong>黃刀鎮 → 里斯本、塞維亞 → 阿姆斯特丹</strong><p>避免自行轉機；冬季樞紐至少保留 3 小時。</p></div></li><li><span>60–90 天</span><div><strong>葡萄牙、西班牙城際列車</strong><p>CP 與 Renfe 開賣後選中午前後班次，保留退改彈性。</p></div></li><li><span>30–60 天</span><div><strong>熱門景點時段</strong><p>聖家堂、阿爾罕布拉以外本案的皇宮、美術館與梵谷博物館依序處理。</p></div></li></ol>
@@ -146,6 +161,6 @@
   <footer><div><strong>2027 極光與歐洲冬旅</strong><p>最後資料整理：2026.09.19 · 所有班次與價格需在付款前再次確認。</p></div><a href="#top">回到頁首 ↑</a></footer>
 
   <script src="vendor/leaflet/leaflet.js?v=3"></script>
-  <script src="app.js?v=7"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>

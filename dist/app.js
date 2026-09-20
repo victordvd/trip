@@ -80,6 +80,28 @@ const transportGroups = [
 
 const budgets = [['長程與區域機票',95000,125000],['住宿（26 晚）',70000,100000],['極光與雪地活動',30000,45000],['城際與市內交通',30000,45000],['餐飲與景點',45000,60000],['保險與預備金',15000,25000]];
 
+const preparationItems = [
+  {id:'passport',category:'證件',title:'確認護照效期與英文姓名',description:'護照需涵蓋完整旅程；所有機票、保險與訂房姓名須與護照完全一致。',dueDate:'2026-09-30',dueLabel:'2026/09/30 前',useDates:'02/04–03/04',locations:['全程'],link:null},
+  {id:'long-haul-flights',category:'交通',title:'鎖定長程與加拿大航班',description:'先處理 CI 開口票，再把 YVR–YZF 與 YZF–LIS 開在加拿大航空同一張票。',dueDate:'2026-10-15',dueLabel:'2026/10/15 前',useDates:'02/04–10、03/03–04',locations:['台北','溫哥華','黃刀鎮','里斯本','阿姆斯特丹'],link:{url:'https://www.china-airlines.com/tw/zh',label:'中華航空查票'}},
+  {id:'lodging',category:'住宿',title:'確認 8 個住宿基地',description:'優先選交通方便且可取消的房型，逐一核對入住、退房與城市稅規則。',dueDate:'2026-10-22',dueLabel:'2026/10/22 前',useDates:'02/04–03/03',locations:['溫哥華','黃刀鎮','里斯本','波多','巴塞隆納','馬德里','塞維亞','阿姆斯特丹'],link:null},
+  {id:'aurora-gear',category:'冬季',title:'預訂極光活動與極地衣物',description:'安排追獵與固定營地兩種觀測方式，確認外套、雪褲、手套、雪靴及飯店接送。',dueDate:'2026-10-31',dueLabel:'2026/10/31 前',useDates:'02/05–09',locations:['黃刀鎮'],link:{url:'https://exploreyellowknife.com/plan-your-trip',label:'黃刀旅遊資訊'}},
+  {id:'eta',category:'證件',title:'申請加拿大 eTA',description:'使用本次搭機所持護照申請；若出發前換發護照，需重新檢查申請狀態。',dueDate:'2026-11-04',dueLabel:'2026/11/04 前',useDates:'02/04–10',locations:['溫哥華','黃刀鎮'],link:{url:'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta.html',label:'加拿大政府 eTA'}},
+  {id:'eu-entry-rules',category:'證件',title:'第一次複查 EES／ETIAS 規定',description:'2027 年規則仍可能調整，只依歐盟官方公告確認是否需事前申請或完成其他程序。',dueDate:'2026-11-04',dueLabel:'2026/11/04 複查',useDates:'02/10–03/03',locations:['葡萄牙','西班牙','荷蘭'],link:{url:'https://travel-europe.europa.eu/',label:'歐盟官方資訊'}},
+  {id:'insurance',category:'保障',title:'投保旅遊與行程延誤保險',description:'核對冬季活動、海外醫療、班機延誤及行李損失保障，保存保單與緊急聯絡方式。',dueDate:'2026-11-15',dueLabel:'2026/11/15 前',useDates:'02/04–03/04',locations:['全程'],link:null},
+  {id:'portugal-rail',category:'交通',title:'購買里斯本至波多火車',description:'CP 開賣後選擇中午前後抵達班次，確認 Lisboa Oriente 與 Porto Campanhã 車站。',dueDate:'2026-12-16',dueLabel:'2026/12/16 起留意',useDates:'02/14',locations:['里斯本','波多'],link:{url:'https://www1.cp.pt/passageiros/en/buy-tickets',label:'CP 國鐵'}},
+  {id:'spain-rail',category:'交通',title:'購買西班牙兩段高鐵',description:'依序處理 Barcelona Sants–Madrid Atocha 與 Madrid Atocha–Sevilla Santa Justa。',dueDate:'2026-12-23',dueLabel:'2026/12/23 起留意',useDates:'02/21、02/24',locations:['巴塞隆納','馬德里','塞維亞'],link:{url:'https://www.renfe.com/es/en',label:'Renfe 官方購票'}},
+  {id:'attractions',category:'預約',title:'預約熱門景點與活動時段',description:'優先處理辛特拉宮殿、聖家堂、奎爾公園、主要美術館、塞維亞王宮與佛朗明哥。',dueDate:'2026-12-31',dueLabel:'2026/12/31 前',useDates:'02/12、02/19–20、02/22–25、02/28–03/01',locations:['辛特拉','巴塞隆納','馬德里','塞維亞','阿姆斯特丹'],link:null},
+  {id:'medicine',category:'健康',title:'備妥處方藥與常備藥',description:'準備足量藥品、原包裝與必要說明；重要藥品隨身攜帶，不放入托運行李。',dueDate:'2027-01-04',dueLabel:'2027/01/04 前',useDates:'02/04–03/04',locations:['全程'],link:null},
+  {id:'money',category:'金流',title:'確認信用卡、現金與海外交易',description:'準備兩張不同發卡機構的卡片，確認加拿大元與歐元的小額現金安排。',dueDate:'2027-01-10',dueLabel:'2027/01/10 前',useDates:'02/04–03/04',locations:['加拿大','葡萄牙','西班牙','荷蘭'],link:null},
+  {id:'connectivity',category:'通訊',title:'準備加拿大與歐洲網路方案',description:'確認 eSIM 啟用日期、流量與手機相容性，保留住宿及緊急聯絡資訊的離線版本。',dueDate:'2027-01-15',dueLabel:'2027/01/15 前',useDates:'02/04–03/04',locations:['加拿大','葡萄牙','西班牙','荷蘭'],link:null},
+  {id:'luggage-power',category:'行李',title:'整理分層衣物與轉接設備',description:'以極地、歐洲冬季、機上過夜三組分裝；準備加拿大與歐洲可用的轉接頭及充電器。',dueDate:'2027-01-20',dueLabel:'2027/01/20 前',useDates:'02/04–03/04',locations:['黃刀鎮','歐洲全段'],link:null},
+  {id:'camera',category:'攝影',title:'檢查腳架、記憶卡與耐寒電池',description:'完成相機韌體、容量與備份測試；多帶備用電池並準備貼身保暖收納。',dueDate:'2027-01-24',dueLabel:'2027/01/24 前',useDates:'02/06–08',locations:['黃刀鎮'],link:null},
+  {id:'offline-documents',category:'文件',title:'下載離線票券與證件備份',description:'將護照、保單、機票、住宿、活動與交通票券存入手機離線資料夾，另留一份紙本。',dueDate:'2027-01-28',dueLabel:'2027/01/28 前',useDates:'02/04–03/04',locations:['全程'],link:null},
+  {id:'weather-transfers',category:'確認',title:'確認天氣、接送與營運狀態',description:'複查極光團接送、YZF 清晨計程車、歐洲航班與列車，並依預報調整衣物。',dueDate:'2027-01-28',dueLabel:'2027/01/28 複查',useDates:'02/04–03/03',locations:['溫哥華','黃刀鎮','歐洲全段'],link:null},
+  {id:'eu-entry-final',category:'證件',title:'最後複查 EES／ETIAS 規定',description:'出發前一週再次查看歐盟官方公告，完成當時確定適用的入境程序。',dueDate:'2027-01-28',dueLabel:'2027/01/28 複查',useDates:'02/10–03/03',locations:['葡萄牙','西班牙','荷蘭'],link:{url:'https://travel-europe.europa.eu/',label:'歐盟官方資訊'}},
+  {id:'final-pack',category:'最後確認',title:'最終行李與隨身包檢查',description:'確認護照、手機、錢包、藥品、充電線、保暖層與一套換洗衣物已放入隨身行李。',dueDate:'2027-02-03',dueLabel:'2027/02/03',useDates:'02/04 出發',locations:['台北桃園機場'],link:null}
+];
+
 const itineraryList = document.querySelector('#itinerary-list');
 const renderItinerary = region => {
   itineraryList.innerHTML = itinerary.map(day => `<article class="itinerary-card" data-region="${day.r}" ${region !== 'all' && region !== day.r ? 'hidden' : ''}><div class="day-date"><strong>${day.d}</strong><span>星期${day.w}</span></div><div class="day-content"><h3>${day.c}<br>${day.t}</h3><p>${day.x}</p><ul>${day.a.map(item=>`<li>${item}</li>`).join('')}</ul></div><div class="day-meta"><span class="day-chip">${day.m}</span><span class="day-weather">${day.temp}</span></div></article>`).join('');
@@ -98,6 +120,59 @@ document.querySelector('#transport-groups').innerHTML = transportGroups.map(grou
 
 const maxBudget = Math.max(...budgets.map(b=>b[2]));
 document.querySelector('#budget-bars').innerHTML = budgets.map(b=>`<div class="budget-row"><span>${b[0]}</span><div class="bar-track"><div class="bar-fill" style="width:${Math.round(b[2]/maxBudget*100)}%"></div></div><strong>${Math.round(b[1]/1000)}–${Math.round(b[2]/1000)}K</strong></div>`).join('');
+
+const preparationStorageKey = 'trip-preparation-v1';
+const preparationIds = new Set(preparationItems.map(item=>item.id));
+let completedPreparation = new Set();
+let preparationFilter = 'all';
+
+try {
+  const savedPreparation = JSON.parse(localStorage.getItem(preparationStorageKey) || '[]');
+  if (Array.isArray(savedPreparation)) completedPreparation = new Set(savedPreparation.filter(id=>preparationIds.has(id)));
+} catch (error) {
+  completedPreparation = new Set();
+}
+
+const preparationList = document.querySelector('#preparation-list');
+const preparationStatus = document.querySelector('#preparation-status');
+const preparationProgressLabel = document.querySelector('#preparation-progress-label');
+const preparationProgressBar = document.querySelector('#preparation-progress-bar');
+
+const savePreparation = () => {
+  try { localStorage.setItem(preparationStorageKey, JSON.stringify([...completedPreparation])); } catch (error) {}
+};
+
+const renderPreparation = () => {
+  const visibleItems = preparationItems.filter(item => preparationFilter === 'all' || (preparationFilter === 'done' ? completedPreparation.has(item.id) : !completedPreparation.has(item.id)));
+  preparationList.innerHTML = visibleItems.length ? visibleItems.map(item => {
+    const done = completedPreparation.has(item.id);
+    return `<article class="preparation-item${done?' is-complete':''}"><label class="preparation-check"><input type="checkbox" data-preparation-id="${item.id}" ${done?'checked':''}><span class="checkmark" aria-hidden="true"></span><span class="sr-only">${done?'取消完成':'標示完成'}：${item.title}</span></label><div class="preparation-date"><span>完成期限</span><time datetime="${item.dueDate}">${item.dueLabel}</time></div><div class="preparation-content"><div class="preparation-title-row"><span class="preparation-category">${item.category}</span><h3>${item.title}</h3></div><p>${item.description}</p><div class="preparation-meta"><span><b>使用日期</b>${item.useDates}</span><span><b>地點</b>${item.locations.join('・')}</span>${item.link?`<a href="${item.link.url}" target="_blank" rel="noreferrer">${item.link.label} ↗</a>`:''}</div></div></article>`;
+  }).join('') : '<p class="preparation-empty">這個篩選條件目前沒有項目。</p>';
+
+  const completed = completedPreparation.size;
+  preparationProgressLabel.textContent = `已完成 ${completed}／${preparationItems.length} 項`;
+  preparationProgressBar.style.width = `${Math.round(completed / preparationItems.length * 100)}%`;
+
+  preparationList.querySelectorAll('[data-preparation-id]').forEach(checkbox => checkbox.addEventListener('change', () => {
+    if (checkbox.checked) completedPreparation.add(checkbox.dataset.preparationId);
+    else completedPreparation.delete(checkbox.dataset.preparationId);
+    savePreparation();
+    preparationStatus.textContent = `${checkbox.checked?'已完成':'已改為待完成'}：${preparationItems.find(item=>item.id===checkbox.dataset.preparationId).title}`;
+    renderPreparation();
+  }));
+};
+
+document.querySelectorAll('[data-preparation-filter]').forEach(button => button.addEventListener('click', () => {
+  preparationFilter = button.dataset.preparationFilter;
+  document.querySelectorAll('[data-preparation-filter]').forEach(filterButton => {
+    const active = filterButton === button;
+    filterButton.classList.toggle('active', active);
+    filterButton.setAttribute('aria-pressed', String(active));
+  });
+  renderPreparation();
+}));
+
+renderPreparation();
 
 const stops = [['台北','02/04 出發',25.08,121.23,'#0b2b46'],['溫哥華','02/04–05 · 1 晚',49.20,-123.18,'#49d799'],['黃刀鎮','02/05–09 · 4 晚',62.47,-114.37,'#49d799'],['里斯本','02/10–14 · 4 晚',38.72,-9.14,'#f09247'],['波多','02/14–18 · 4 晚',41.15,-8.61,'#f09247'],['巴塞隆納','02/18–21 · 3 晚',41.39,2.17,'#f09247'],['馬德里','02/21–24 · 3 晚',40.42,-3.70,'#f09247'],['塞維亞','02/24–27 · 3 晚',37.39,-5.99,'#f09247'],['阿姆斯特丹','02/27–03/03 · 4 晚',52.37,4.90,'#4f8fbd']];
 

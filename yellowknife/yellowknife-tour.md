@@ -3,6 +3,8 @@
 ## 行程摘要
 
 > 匯率估算：`1 CAD ≈ NT$22.49`（2026-09-26，僅供預算參考；刷卡匯率與手續費另計）。參考：[CAD/TWD 匯率歷史](https://www.exchangerates.org.uk/CAD-TWD-spot-exchange-rates-history-2026.html)
+>
+> **方案導讀**：下表細項目前以「🥉 Northern Lights＋Beck's（分開預訂）」作為預算基底試算（約 NT$31,250／人）。若追求最高整合度、中文導覽、含專業冬衣與機場來回接送，首選請參考「🥇 Aurora Dream 4D3N＋Beck’s 自駕狗隊（約 NT$34,848／人）」，完整比較請參見 [前三大決選方案評比](#前三大決選方案評比)。
 
 | 日期 | 行程 | 廠商／公司 | 價格（每人） | 包含／差異 | 參考連結 | 狀態 |
 |---|---|---|---:|---|---|---|
@@ -101,17 +103,67 @@
 
 ## 活動與旅行社方案比較
 
+### 全在地旅行社與活動方案清單
+
+##### 前三大決選方案評比（含雄獅旅遊統包團對比）
+
+針對 5 人成行、4 天 3 夜、入住 Greenhaven Guesthouse（或雄獅方案入住市區飯店）的條件，綜合評估活動整合度、中文支援、冬衣配備、接送銜接與預算，將三大決選方案與雄獅旅遊統包方案對比如下：
+
+| 項目 | 🥇 Aurora Dream 4D3N＋Beck’s 自駕狗隊 | 🥈 Beck’s City of Diamonds＋狗橇 | 🥉 Northern Lights＋Beck’s | 🦁 雄獅旅遊 經典4日（[27AS208CL4-D](https://tour.liontravel.ca/zh-tw/64388baf-2d41-421b-9330-5443015bf505?groupid=27AS208CL4-D)） |
+|---|---|---|---|---|
+| **機票** | ✅ Air North 直飛（4N869 / 4N880，含 1 隨身＋2 托運） | ✅ Air North 直飛（4N869 / 4N880，含 1 隨身＋2 托運） | ✅ Air North 直飛（4N869 / 4N880，含 1 隨身＋2 托運） | ✅ **套裝已含**（溫哥華往返黃刀鎮來回機票） |
+| **住宿** | ✅ Greenhaven Guesthouse Downtown（3 晚，5 人分攤） | ✅ Greenhaven Guesthouse Downtown（3 晚，5 人分攤） | ✅ Greenhaven Guesthouse Downtown（3 晚，5 人分攤） | ✅ **套裝已含**（市區飯店 3 晚：Chateau Nova / Nova Inn / Explorer） |
+| **交通（總覽）** | ✅ 機場來回接送＋全活動接送（含狗橇） | ✅ 機場來回接送＋套裝活動接送 | ⚠️ 活動接送含；機場來回計程車自理 | ✅ 機場來回接駁＋極光接送已含（⚠️ 晚於 22:01 抵達除外） |
+| └ 機場來回 | ✅ 套裝接送 | ✅ 套裝接送 | ❌ 自理計程車（約 CAD 20–30／車） | ✅ 套裝專車接駁 |
+| └ 活動接送 | ✅ 包含（極光、City Tour、狗橇） | ✅ 包含（極光、狗橇） | ✅ 包含（極光含；狗橇接送約 CAD 5.25） | ✅ 極光接送已含；自費活動提供接送 |
+| **極光** | ✅ 3 晚 | ✅ 3 晚 | ✅ 3 晚 | ✅ 3 晚 |
+| 極光型態 | 2晚追光＋1晚 Cabin/Tipi | Beck’s 極光團 | 3晚開車追光 | 1晚 360°玻璃帳篷營地＋2晚夜追光 |
+| 每晚開始 | **約 22:00** | **22:00** | ⚠️ 官網未固定公布 | 約 21:00–22:00 |
+| **狗拉雪橇** | ✅ Beck’s **自駕** | ✅ 套裝加購 | ✅ Beck’s **自駕** | ➕ 自費加購 CAD 130（優先排 Aurora Village，非自駕） |
+| 狗橇內容 | 約20–30分鐘、約8 km、3人／橇 | ⚠️ 官網只寫「Dog sledding upgrade」，未明列是否自駕 | 約20–30分鐘、約8 km、3人／橇 | 乘坐式體驗，6–8隻雪橇犬帶領，林間或湖面奔馳 |
+| 冬衣 | ✅ 4D3N Canada Goose＋Baffin | ✅ 包含 | ✅ Northern Lights 租借 | ➕ 自費加購五件組 CAD 110（現場租 CAD 150） |
+| City Tour | ✅ **2.5 小時** | ❌ | ❌ 自助 | ✅ **約 3 小時**（市區觀光） |
+| 中文導遊 | ✅ | ❌ 未標示 | ❌ 未標示 | ✅ 雄獅中文導遊／領隊 |
+| 極光攝影 | ✅ | — | ✅ | — 依現場導遊協助，無固定贈送精修照 |
+| GST | ✅ **已含** | ✅ **已含** | ⚠️ NLT 公開頁未明確寫總價是否含稅 | ⚠️ **5% GST 另計**（未含） |
+| 官方小費規定 | 約 CAD10／人／天，**自願** | 未公布固定建議額 | 未公布固定建議額 | ✅ **已包含**（贈送司機導遊小費） |
+| **航班／日期銜接** | ✅ **2/6 4N869 銜接很好** | ✅ **2/6 4N869 銜接最好** | ⚠️ 要先確認 pickup 時間 | ⚠️ 固定團期 **2027/02/08–02/11**（機票由雄獅開立） |
+| 行程密度 | ★★★★☆ | ★★★★★ | ★★★★★ | ★★★★☆ |
+| 中文便利 | ★★★★★ | ★★☆☆☆ | ★★☆☆☆ | ★★★★★（台灣大型旅行社） |
+| 整合程度 | ★★★★★ | ★★★★☆ | ★★★☆☆ | ★★★★★（機票＋飯店＋極光＋小費統包） |
+| **活動費／人** | **CAD 585.25** | **CAD 603.75** | **約 CAD 425.25** | 自費冬衣＋狗橇 CAD 240 + GST ≈ **CAD 252（約 NT$5,667）** |
+| **活動費台幣** | **約 NT$13,162** | **約 NT$13,578** | **約 NT$9,564** | **約 NT$5,667**（自費活動與冬衣） |
+| **機票費／人** | **CAD 648.81（約 NT$14,591）** | **CAD 648.81（約 NT$14,591）** | **CAD 648.81（約 NT$14,591）** | ✅ **團費已含** |
+| **住宿費／人** | **約 NT$7,094**（5 人均攤房價 NT$35,470） | **約 NT$7,094**（5 人均攤房價 NT$35,470） | **約 NT$7,094**（5 人均攤房價 NT$35,470） | ✅ **團費已含**（市區飯店 3 晚） |
+| **地面交通費／人** | **✅ 已含**（NT$0） | **✅ 已含**（NT$0） | **約 NT$180–270**（機場計程車 5 人分攤） | ✅ **團費已含**（機場與活動接駁） |
+| **機票＋住宿＋活動** | **約 NT$34,848** | **約 NT$35,264** | **約 NT$31,250** | **約 NT$35,962–37,665**（含自費冬衣＋狗橇） |
+| 官方建議小費納入後 | **約 NT$35,748** | 小費另計 | 小費另計 | ✅ **已包含**（贈送小費，不需另付） |
+| **5 人基本總額** | **約 NT$174,240** | **約 NT$176,320** | **約 NT$156,250＋機場交通** | **約 NT$179,810–188,325**（全包含冬衣狗橇） |
+
+##### 決選方案核心特點
+- **🥇 冠軍首選（Aurora Dream 4D3N＋Beck’s 自駕狗隊）**：整合度（★★★★★）與中文便利度（★★★★★）最高。已含機場來回接送、4 天 Canada Goose + Baffin 頂級冬衣、City Tour、極光攝影與 GST。相較於銅牌分開預訂僅差約 NT$3,600／人，但省下機場計程車與自行領還冬衣的時間與不確定性，2/6 航班接送銜接評價良好。
+- **🥈 亞軍次選（Beck’s City of Diamonds＋狗橇）**：單一供應商統包，機場與各活動銜接最緊密，冬衣已含。缺點是無 City Tour、無中文導覽，官網狗橇升級未註明是否能自駕，費用也是三者中最高。
+- **🥉 季軍經濟選（Northern Lights＋Beck’s，現行分開預訂）**：基本活動開銷最低（每人約 NT$9,564），Beck's 狗拉雪橇明確自駕。但須自行叫機場計程車、冬衣需搭配 NLT 行程另外租借、無中文服務，且 2/6 抵達日接送時間需個別向 NLT 協調確認。
+- **🦁 雄獅旅遊統包團（[經典黃刀鎮4日｜27AS208CL4-D](https://tour.liontravel.ca/zh-tw/64388baf-2d41-421b-9330-5443015bf505?groupid=27AS208CL4-D)）**：
+  - **優勢**：真正的一站式統包（連溫哥華↔黃刀鎮來回機票、市區標準飯店住宿 3 晚、司機導遊小費都已包含），並安排 1 晚 360 度全景玻璃帳篷營地＋2 晚夜追光、3 小時市區觀光與中文導遊。不用自行訂房、訂機票或分攤 Airbnb 衛浴。
+  - **劣勢與限制**：
+    1. **冬衣與狗拉雪橇需自費外加**：冬衣五件組 CAD 110、傳統狗拉雪橇 CAD 130，另加 5% GST（每人需額外自費約 CAD 252／NT$5,667）。且狗橇優先排 Aurora Village 乘坐式，非 Beck's 自駕狗隊。
+    2. **總預算最高**：住 Chateau Nova 全包每人約 **NT$37,665**（5 人總額約 NT$188,325），住 Nova Inn 全包約 **NT$35,962**，比 🥇 Aurora Dream 高約 NT$1,900–2,800／人。
+    3. **出發日期固定**：此團號（27AS208CL4-D）出發日期為 **2027/02/08（一）～02/11（四）**，若採此方案需將原訂 2/6–2/9 行程順延 2 天。
+
+#### 各旅行社與活動方案完整盤點（含在地業者與雄獅統包）
+
 每一列代表一家旅行社／供應商；同一業者的多個方案集中在同一列。表內金額均為每人；只有 `✅ 價格內` 的項目包含在所列套裝價，`➕` 需另付費，`❌` 不含，`❓` 未公開或未確認。完整業者資料見[在地旅行社與活動方案](yellowknife-local-agencies-and-activities.md)。
 
-「方案與活動總價」以 **3 晚極光、城市自助 CAD 0、狗拉雪橇、4 天冬衣**為基準，只計套裝及活動費；機票與住宿另計。缺項優先採本業者公開價格，否則參考 Northern Lights Tours 極光（3 晚 CAD 225；2 晚 CAD 160）、Beck's 狗拉雪橇（CAD 110.25）及 Yellowknife Vacations 冬衣（4 天 CAD 205.80，含 GST）補購；新台幣換算沿用文首匯率 `1 CAD ≈ NT$22.49`。含住宿套裝因無法拆出住宿費，不作活動總價。未含的機場交通、狗拉雪橇接送、未確認稅費與小費另計；`已知小計` 不等於完整總價。
+「方案與活動總價」以 **3 晚極光、城市自助 CAD 0、狗拉雪橇、4 天冬衣**為基準，只計套裝及活動費；機票（Air North 直飛約 NT$14,591）、住宿（Greenhaven 5 人分攤約 NT$7,094）與未含之機場計程車交通另計。含住宿套裝因無法拆出住宿費，不作活動總價。完整「機票＋住宿＋交通＋活動」總額試算請參見上方[前三大決選方案評比](#前三大決選方案評比)。
 
-| 旅行社／供應商 | 4D3N 方案／基本價 | 價格（CAD／TWD，每人） | 活動項目 | 住宿 | 機場 | 冬衣 | 極光 | 城市觀光 | 狗拉雪橇 | 冰釣 | 雪地摩托 | 攝影 | 明確另付／待確認 |
+| 旅行社／供應商 | 4D3N 方案／基本價 | 價格（CAD／TWD，每人） | 活動項目 | 住宿 | 交通（機場） | 冬衣 | 極光 | 城市觀光 | 狗拉雪橇 | 冰釣 | 雪地摩托 | 攝影 | 明確另付／待確認 |
 |---|---:|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Northern Lights Tours](https://www.northernlightstours.co/) | [3 晚極光＋4 天冬衣](https://www.northernlightstours.co/tour-package/northern-lights-tour/) **CAD 315**；[含住宿套裝](https://www.northernlightstours.co/tours-packages/) CAD 320 起但天數❓ | **CAD 450／約 NT$10,120** | 3 晚極光、4 天冬衣、狗拉雪橇；城市自助 0 | 套裝可含；晚數❓ | 含住宿套裝 ✅；活動-only ❌ | ➕ 4 天 CAD 90 | ➕ 3 晚 CAD 225 | ➕ CAD 55 | ➕ CAD 135 | ➕ CAD 125 | ➕ 1 小時 CAD 110 | ✅ 極光團內 | 本次主方案使用其極光及冬衣；2/6 接送時間、含住宿套裝的 4D3N 總價待確認。 |
-| [Beck's Kennels](https://www.beckskennels.com/) | [City of Diamonds 3 晚](https://www.beckskennels.com/item/3-night-city-of-diamonds-package/) **CAD 651，含稅**；正式 4D3N 形式❓ | **待報價** | City of Diamonds 3 晚、狗拉雪橇升級；已知小計 CAD 756／約 NT$17,002，冬衣 4 天待確認 | ❌ | ✅ City of Diamonds 內 | ✅ City of Diamonds 內；單次 CAD 42 | ✅ 3 晚套裝 | ❓ | ➕ 套裝升級 CAD 100 + GST；單買 CAD 110.25 | ➕ 價格❓ | ➕ 價格❓ | ❓ | 本次主方案使用其單買狗拉雪橇，接送另 CAD 5.25；餐食、小費另付。 |
+| 🥉 [Northern Lights Tours](https://www.northernlightstours.co/) | [3 晚極光＋4 天冬衣](https://www.northernlightstours.co/tour-package/northern-lights-tour/) **CAD 315**；外加 Beck's 自駕狗橇 CAD 110.25 | **約 CAD 425.25／約 NT$9,564** | 3 晚極光、4 天冬衣、Beck's 自駕狗拉雪橇；城市自助 0 | 套裝可含；晚數❓ | ❌ 計程車 | ➕ 4 天 CAD 90 | ➕ 3 晚 CAD 225 | ❌ 自助 | ✅ Beck's 自駕 CAD 110.25 | ➕ CAD 125 | ➕ 1 小時 CAD 110 | ✅ 極光團內 | **🥉 決選季軍**；含 3 晚追光與攝影；需自理機場計程車，2/6 接送時間待確認。 |
+| 🥈 [Beck's Kennels](https://www.beckskennels.com/) | [City of Diamonds 3 晚](https://www.beckskennels.com/item/3-night-city-of-diamonds-package/) **CAD 651，含稅**；[狗拉雪橇加購](https://www.beckskennels.com/item/3-night-city-of-diamonds-package/) | **CAD 603.75／約 NT$13,578** | City of Diamonds 3 晚套裝＋狗拉雪橇加購 | ❌ | ✅ 價格內 | ✅ 包含 | ✅ 3 晚套裝 | ❌ | ➕ 套裝加購（未明列是否自駕） | ➕ 價格❓ | ➕ 價格❓ | — | **🥈 決選亞軍**；機場接送最好，冬衣已含；無 City Tour 與中文導遊，狗橇需確認是否為自駕。 |
 | [Yellowknife Tours](https://yellowknifetours.com/) | [無固定 4D3N；各活動單買](https://orders.yellowknifetours.com/activities/) | **CAD 766.50／約 NT$17,237** | 3 晚極光、4 天冬衣、狗拉雪橇；城市自助 0 | ❌ | ❓ | ➕ CAD 55 + GST／日 | ➕ 極光巴士 CAD 125 + GST | ➕ CAD 130 + GST | ➕ CAD 135 + GST | ➕ CAD 135–175 + GST | ➕ CAD 175 + GST | ❓ | 適合自行組合 4D3N；住宿、機場交通、餐費、小費另付。 |
 | [KKday 150392／Jiguang Tour](https://www.kkday.com/zh-tw/product/150392?cid=4904&ud1=detail-share&ud2=app-ios) | [4D3N](https://www.kkday.com/zh-tw/product/150392?cid=4904&ud1=detail-share&ud2=app-ios) **NT$12,251** | **約 NT$19,359／約 CAD 861** | 套裝 3 晚極光、城市觀光；外購 4 天冬衣、狗拉雪橇 | ❌ | ✅ 價格內，來回 | ❌ | ✅ 價格內，3 晚 | ✅ 價格內 | ➕ 第 3 天，價格❓ | ❓ | ❓ | ✅ 價格內 | 住宿、冬衣、狗拉雪橇、餐費、機票、保險、小費另付。 |
-| [Aurora Dream Tours](https://www.auroradreamtours.com/) | [無住宿 4D3N](https://www.auroradreamtours.com/winter) **CAD 475 含稅**；[B1／B2 含住宿](https://www.auroradreamtours.com/winter-b1b2) **CAD 760 起** | **待報價** | 無住宿套裝、狗拉雪橇；已知小計 CAD 585.25／約 NT$13,162，極光夜數及冬衣 4 天待確認 | B1／B2 ✅ 3 晚；無住宿方案 ❌ | ✅ 價格內 | ✅ 價格內 | ✅ 價格內；夜數依方案 | ✅ 價格內 | B2 ✅；其他方案❓ | B2 ✅；其他方案❓ | B2 ✅；其他方案❓ | ✅ 無住宿方案內；B1／B2 ❓ | CAD 760 不代表 B2 全活動總價；房型、餐費、機票、保險、小費另確認。 |
+| 🥇 [Aurora Dream Tours](https://www.auroradreamtours.com/) | [無住宿 4D3N](https://www.auroradreamtours.com/winter) **CAD 475 含稅**；外加 Beck's 自駕狗隊 CAD 110.25 | **CAD 585.25／約 NT$13,162** | 3 晚極光（2追光+1營地）、4 天冬衣、City Tour、攝影、Beck's 自駕狗隊 | B1／B2 ✅ 3 晚；無住宿方案 ❌ | ✅ 價格內 | ✅ Canada Goose＋Baffin | ✅ 價格內（3 晚） | ✅ 2.5 小時 | ✅ Beck's 自駕 CAD 110.25 | B2 ✅；其他方案❓ | B2 ✅；其他方案❓ | ✅ 價格內 | **🥇 決選冠軍**；含中文導遊、機場來回接送、頂級冬衣、City Tour 與攝影，GST 已含。 |
 | [Yellowknife Vacations](https://yellowknifevacations.com/) | [可組 4D3N](https://yellowknifevacations.com/day-tours/winter-clothing-rentals/)；2 晚極光＋City Tour＋3 天冬衣約 **CAD 437** | **CAD 615.30／約 NT$13,837** | 3 晚極光、4 天冬衣、狗拉雪橇；城市自助 0 | ❌ | ❌ | ➕ CAD 49／日 + GST | ➕ 極光巴士 CAD 95／晚 + GST | ➕ CAD 79 + GST | ❓ | ❓ | ❓ | ❓ | 固定巴士型極光；住宿、機場交通、餐費、小費另付。 |
 | [Aurora Village](https://auroravillage.com/) | [可組 4D3N；總價需詢價](https://auroravillage.com/) | **待報價** | 4 天冬衣可外購；極光、狗拉雪橇待報價 | ❌ | ❌；僅活動接送 | ❓ | ➕ 固定營地，價格❓ | ❌ | ➕ 價格❓ | ➕ 價格❓ | ❓ | ❓ | 須取得極光夜數、加購活動及接送總價後再比較。 |
 | [B-Dene Adventures](https://bdene.com/) | [單晚 Indigenous Aurora](https://bdene.com/aurora-viewing-tour-yellowknife/) **CAD 120 + GST**；可納入 4D3N | **CAD 602.05／約 NT$13,540** | 1 晚 B-Dene 極光、2 晚外購極光、4 天冬衣、狗拉雪橇 | ❌ | ❌；含活動接送 | ❌ | ➕ CAD 120 + GST | ➕ 價格❓ | ❌ | ❌ | ❌ | ❓ | 含 Dene 故事、鼓樂、魚料理、飲品與 Bannock；其餘行程另組。 |
@@ -120,14 +172,17 @@
 | [My Backyard Tours](https://www.mybackyardtours.ca/) | [無固定 4D3N；冬衣及 Tour 分開預訂](https://www.mybackyardtours.ca/product-page/ultimate-winter-clothing-package) | **待報價** | 外購 3 晚極光、狗拉雪橇；已知小計 CAD 335.25／約 NT$7,539，冬衣 4 天及其他 Tour 待確認 | ❌ | ❓ | ➕ 套裝顯示 CAD 105；租期依結帳頁 | ❓ | ➕ 價格❓ | ❓ | ❓ | ❓ | ❓ | 主要作為獨立租衣候選；其他 Tour 價格需詢價。 |
 | [Tugáh Northern Experiences](https://www.tugah.com/) | [可組 4D3N；價格需詢價](https://www.tugah.com/winter-experiences-copy) | **待報價** | 外購 3 晚極光、4 天冬衣；已知小計 CAD 430.80／約 NT$9,690，狗拉雪橇待報價 | ❌ | ❓ | ❓ | ➕ 價格❓ | ❓ | ➕ 價格❓ | ❓ | ❓ | ❓ | 小團狗隻及原住民體驗；完整內容與接送需詢價。 |
 | [North of 60 Aurora Adventures](https://northof60auroraadventures.com/) | [可組 4D3N；價格需詢價](https://northof60auroraadventures.com/) | **待報價** | 4 天外購冬衣；已知小計 CAD 205.80／約 NT$4,629，極光 3 晚及狗拉雪橇待報價 | ❌ | ❓ | ❓ | ➕ Sky Dome，價格❓ | ❓ | ➕ 價格❓ | ➕ 價格❓ | ➕ 價格❓ | ❓ | 家庭、小團與 Dene 文化體驗；完整總價需詢價。 |
+| 🦁 [雄獅旅遊 Lion Travel](https://tour.liontravel.ca/zh-tw/64388baf-2d41-421b-9330-5443015bf505?groupid=27AS208CL4-D) | [經典黃刀鎮4日（27AS208CL4-D）](https://tour.liontravel.ca/zh-tw/64388baf-2d41-421b-9330-5443015bf505?groupid=27AS208CL4-D) **CAD 1,219 起 + 5% GST** | **約 CAD 1,599–1,675／約 NT$35,962–37,665**（含機票+住宿+冬衣+狗橇） | 3 晚極光（1營地+2追光）、City Tour、機票、住宿、小費；自費冬衣＋狗橇 | ✅ 市區飯店 3 晚 | ✅ 接駁 | ➕ CAD 110 + GST | ✅ 3 晚套裝 | ✅ 3 小時 | ➕ CAD 130 + GST | ➕ CAD 175 + GST | ➕ CAD 125 + GST | — | 統包套裝含 YVR 來回機票與飯店；贈司機導遊小費；5% GST、冬衣與狗橇另計；團期固定 2/8–2/11。 |
 
 ### 明確建議
 
 以下以 **2027/2/6–2/9、5 位成人**及 `1 CAD ≈ NT$22.49` 試算；均未包含機票、餐費、小費、未確認稅費與刷卡費。
 
-- **整體首選：目前分開預訂方案。** 已訂 Greenhaven，且三晚追光、城市自助、Beck's 狗拉雪橇與冬衣都已有可核算價格。含住宿及機場計程車估計約 **NT$16,838–16,928／人**；狗拉雪橇接送另 CAD 5.25。2/6 抵達夜是否能趕上極光接送是採用前提。
-- **省事首選：Aurora Dream 無住宿 4D3N。** CAD 475 含機場接送、冬衣、極光、City Tour 與攝影；狗拉雪橇仍須另取得報價。
-- **中文與三晚極光首選：KKday 150392。** 加 Greenhaven 約 **NT$19,345／人起**，但冬衣、狗拉雪橇及小費尚未計入。
+- **整體首選（🥇 推薦）：Aurora Dream 4D3N＋Beck’s 自駕狗隊。** 機場來回接送、4 天 Canada Goose 冬裝、三晚極光（2晚追光＋1晚營地）、City Tour 與攝影全部統包且有中文導覽，外加 Beck's 自駕狗橇後每人活動費約 **CAD 585.25（約 NT$13,162）**，機加酒加活動約 **NT$34,848／人**（含小費約 NT$35,748）。整合度與便利性最高，2/6 抵達航班銜接風險最低。
+- **全包省心與飯店住宿首選：雄獅旅遊 經典4日（27AS208CL4-D）。** 每人團費含溫哥華來回機票、市區標準飯店住宿 3 晚（Chateau Nova 等）、三晚極光（1營地+2追光）、City Tour 與司機導遊小費，另加購冬衣（CAD 110）與狗拉雪橇（CAD 130）及 5% GST 後，每人全包約 **NT$35,962–37,665**。適合「希望由知名大旅行社統包機票與飯店、不想住民宿分攤衛浴」的旅客；但須配合其出發日期（2027/2/8–2/11），且狗橇為乘坐式非自駕。
+- **經濟彈性選（🥉 方案）：Northern Lights＋Beck’s 分開預訂。** 活動費約 **CAD 425.25（約 NT$9,564）**，機加酒加活動約 **NT$31,250／人＋機場計程車**。適合預算優先且願意自行處理機場交通與自助城市觀光的旅客；但 2/6 抵達夜極光接送與冬衣交付須事先向 NLT 確認。
+- **統包次選（🥈 方案）：Beck’s City of Diamonds＋狗橇。** 適合想由 Beck's 單一窗口處理的旅客，活動費約 **CAD 603.75（約 NT$13,578）**，機加酒加活動約 **NT$35,264／人**；但需確認加購狗橇是否為自駕，且無 City Tour 與中文服務。
+- **中文與三晚極光次選：KKday 150392。** 加 Greenhaven 約 **NT$19,345／人起**，但冬衣、狗拉雪橇及小費尚未計入。
 - **完全套裝首選：Aurora Dream B1／B2。** 僅在取消 Greenhaven 時考慮；付款前須取得 B2 活動、房型、稅費與最終總價。
 - **中文固定巴士次選：Yellowknife Vacations。** 兩晚極光、City Tour 與 3 天冬衣約 CAD 437，但不含住宿及機場接送，整體便利性不及 Aurora Dream 或 KKday。
 - **需求型旅行社：** 冰釣或雪地摩托優先查 Yellowknife Tours，再比較 Yellowknife Outdoor Adventures；重視 Dene 文化選 B-Dene；偏好固定營地選 Aurora Village。這些業者都需先取得完整 4D3N 報價。

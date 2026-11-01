@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="2027 年 2 月台灣、黃刀鎮、葡萄牙、西班牙與荷蘭的 29 日冬季旅程規劃。">
+  <meta name="description" content="2027 年 2 月台灣、黃刀鎮與美國西部冬季旅程：溫哥華、西雅圖、拉斯維加斯、洛杉磯。">
   <meta name="theme-color" content="#071b2f">
-  <title>2027 極光與歐洲冬旅</title>
+  <title>2027 極光與美西冬旅</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071b2f'/%3E%3Cpath d='M8 35c12-17 21 12 48-15-9 25-30 28-48 15Z' fill='%2375f3b0'/%3E%3Cpath d='M19 48h26' stroke='%23d8eff7' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#top" aria-label="回到頁首"><span class="brand-mark">N29</span><span>極光・伊比利・運河</span></a>
+    <a class="brand" href="#top" aria-label="回到頁首"><span class="brand-mark">N26</span><span>極光・美西冬旅</span></a>
     <nav aria-label="主要導覽">
       <a href="#map-section">地圖</a><a href="#transport">交通</a><a href="#yellowknife-plan">黃刀鎮</a><a href="#itinerary">日程</a><a href="#stays">住宿</a><a href="#budget">預算</a><a href="#preparation">準備</a>
     </nav>
@@ -29,86 +29,66 @@
       <img class="hero-image" src="./assets/yellowknife-aurora.jpg?v=2" width="1774" height="887" fetchpriority="high" alt="綠色極光映照黃刀鎮冰湖、森林、小木屋與帳篷的冬夜插畫">
       <div class="hero-overlay"></div>
       <div class="hero-copy">
-        <p class="eyebrow">2027.02.04 — 03.04 · 29 DAYS</p>
-        <h1 id="page-title">從極光追到<br><em>南歐的冬陽</em></h1>
-        <p class="hero-lead">台灣出發，穿越黃刀鎮的冰雪夜、伊比利半島的古城，再以阿姆斯特丹運河作結。</p>
-        <div class="hero-actions"><a class="button button-primary" href="#route">查看完整路線</a><a class="button button-ghost" href="#flights">CI0032 航班</a></div>
+        <p class="eyebrow">2027.02.04 — 03.01 · 26 DAYS</p>
+        <h1 id="page-title">追過北境極光<br><em>一路向南到加州</em></h1>
+        <p class="hero-lead">從溫哥華飛往黃刀鎮，再沿西岸南下西雅圖、拉斯維加斯與洛杉磯。美西全段不自駕。</p>
+        <div class="hero-actions"><a class="button button-primary" href="#route">查看完整路線</a><a class="button button-ghost" href="#flights">查看航段</a></div>
       </div>
       <div class="trip-stats" aria-label="旅程摘要">
-        <div><strong>29</strong><span>日</span></div><div><strong>8</strong><span>城市基地</span></div><div><strong>2</strong><span>極光夜（暫定）</span></div><div><strong>4</strong><span>國家</span></div>
+        <div><strong>26</strong><span>日（含出發日）</span></div><div><strong>6</strong><span>住宿段</span></div><div><strong>2</strong><span>極光夜（暫定）</span></div><div><strong>2</strong><span>國家</span></div>
       </div>
     </section>
 
     <section class="travel-alert" aria-label="重要提醒">
       <span class="alert-index">01</span>
-      <div><strong>黃刀鎮日期已改為 2/6–2/9</strong><p>2/9 晚上才返抵溫哥華；原網站的 2/9 清晨離開黃刀鎮、2/10 抵達里斯本方案已不適用。跨洋航段與歐洲抵達日待重新確認。</p></div>
+      <div><strong>美西全程不自駕</strong><p>2/11 搭 Amtrak 前往西雅圖，城市間以飛機銜接；景點接送優先選預訂團、計程車或叫車。班次、票價與回台航班仍待確認。</p></div>
       <a href="#checklist">查看預訂順序</a>
     </section>
 
     <section id="map-section" class="section map-section" aria-labelledby="map-title">
       <div class="section-heading compact-heading">
-        <div><p class="eyebrow dark">INTERACTIVE MAP</p><h2 id="map-title">從北境到歐洲，一站一站看</h2></div>
-        <p>切換區域查看路線，點選城市查看日期與地圖連結。虛線為航空、實線為鐵路；航空轉機點詳列於下方航班卡。</p>
+        <div><p class="eyebrow dark">INTERACTIVE MAP</p><h2 id="map-title">從黃刀鎮往南，接上美西城市</h2></div>
+        <p>切換區域查看路線，點選城市查看日期與地圖連結。虛線代表航空、實線代表鐵路；未確認航段會標示待查。</p>
       </div>
       <div class="map-toolbar" role="group" aria-label="地圖範圍">
-        <button type="button" data-map-view="europe" aria-pressed="true">歐洲 6 城</button>
         <button type="button" data-map-view="canada" aria-pressed="false">加拿大</button>
-        <button type="button" data-map-view="world" aria-pressed="false">全程含回台</button>
+        <button type="button" data-map-view="west" aria-pressed="true">美國西部</button>
+        <button type="button" data-map-view="world" aria-pressed="false">全程含返台</button>
         <button type="button" id="map-reset">重設視野</button>
       </div>
-      <div class="map-shell">
-        <div id="trip-map" aria-label="旅程互動地圖"><p class="map-fallback">地圖載入中。若無法載入，請使用下方城市連結。</p></div>
-      </div>
+      <div class="map-shell"><div id="trip-map" aria-label="旅程互動地圖"><p class="map-fallback">地圖載入中。若無法載入，請使用下方城市連結。</p></div></div>
       <div class="route-key" aria-label="路線圖例"><span><i class="flight-line"></i>航空路線示意</span><span><i class="rail-line"></i>鐵路</span><span>數字＝行程順序</span></div>
-      <p class="map-status" id="map-status" role="status">歐洲段：里斯本 → 波多 → 巴塞隆納 → 馬德里 → 塞維亞 → 阿姆斯特丹</p>
+      <p class="map-status" id="map-status" role="status">美國西部：西雅圖 → 拉斯維加斯 → 洛杉磯；不自駕。</p>
       <div id="map-city-list" class="map-city-list" aria-label="城市與停留日期"></div>
       <noscript><p class="map-fallback">需要啟用 JavaScript 才能顯示互動地圖。所有地點與交通資訊仍可在下方日程閱讀。</p></noscript>
     </section>
 
     <section id="route" class="section route-section" aria-labelledby="route-title">
-      <div class="section-heading">
-        <p class="eyebrow dark">THE ROUTE</p>
-        <h2 id="route-title">一條從北緯 62° 展開的冬季長線</h2>
-        <p>2/6–2/9 在黃刀鎮住 3 晚，2/9 晚返溫哥華；歐洲段日期須待跨洋航班確認。</p>
-      </div>
-      <div class="route-board" role="img" aria-label="台北、溫哥華、黃刀鎮、里斯本、波多、巴塞隆納、馬德里、塞維亞、阿姆斯特丹、台北的路線示意">
-        <div class="route-line"></div>
-        <ol class="route-stops">
-          <li><span>01</span><strong>台北</strong><small>TPE</small></li>
-          <li><span>02</span><strong>溫哥華</strong><small>YVR</small></li>
-          <li><span>03</span><strong>黃刀鎮</strong><small>YZF</small></li>
-          <li><span>04</span><strong>里斯本</strong><small>LIS</small></li>
-          <li><span>05</span><strong>波多</strong><small>OPO</small></li>
-          <li><span>06</span><strong>巴塞隆納</strong><small>BCN</small></li>
-          <li><span>07</span><strong>馬德里</strong><small>MAD</small></li>
-          <li><span>08</span><strong>塞維亞</strong><small>SVQ</small></li>
-          <li><span>09</span><strong>阿姆斯特丹</strong><small>AMS</small></li>
+      <div class="section-heading"><p class="eyebrow dark">THE ROUTE</p><h2 id="route-title">先追極光，再循西岸往南</h2><p>黃刀鎮 2/6–2/9 三晚；2/9 晚返溫哥華，2/11 搭火車到西雅圖，3/1 從洛杉磯返台。</p></div>
+      <div class="route-board" role="img" aria-label="台北、溫哥華、黃刀鎮、溫哥華、西雅圖、拉斯維加斯、洛杉磯、台北的路線示意">
+        <div class="route-line"></div><ol class="route-stops">
+          <li><span>01</span><strong>台北</strong><small>TPE</small></li><li><span>02</span><strong>溫哥華</strong><small>YVR</small></li><li><span>03</span><strong>黃刀鎮</strong><small>YZF</small></li><li><span>04</span><strong>溫哥華</strong><small>YVR</small></li><li><span>05</span><strong>西雅圖</strong><small>SEA</small></li><li><span>06</span><strong>拉斯維加斯</strong><small>LAS</small></li><li><span>07</span><strong>洛杉磯</strong><small>LAX</small></li><li><span>08</span><strong>台北</strong><small>TPE</small></li>
         </ol>
       </div>
     </section>
 
     <section id="flights" class="section flight-highlight" aria-labelledby="flight-title">
       <div class="flight-date"><span>FEB</span><strong>04</strong><small>THU</small></div>
-      <div class="flight-main">
-        <p class="eyebrow dark">REFERENCE FLIGHT · 已納入</p>
-        <h2 id="flight-title">CI0032 · 台北 → 溫哥華</h2>
-        <div class="flight-route"><div><strong>23:35</strong><span>TPE · 2/4</span></div><div class="plane-line" aria-hidden="true"><span>✦</span></div><div><strong>19:00</strong><span>YVR · 2/4</span></div></div>
-      </div>
-      <aside class="flight-note"><strong>溫哥華停留兩晚</strong><p>2/4 抵達後先過夜，2/5 保留緩衝；2/6 搭 Air North 直飛黃刀鎮。</p></aside>
+      <div class="flight-main"><p class="eyebrow dark">REFERENCE FLIGHT · 既有行程記錄</p><h2 id="flight-title">CI0032 · 台北 → 溫哥華</h2><div class="flight-route"><div><strong>23:35</strong><span>TPE · 2/4</span></div><div class="plane-line" aria-hidden="true"><span>✦</span></div><div><strong>19:00</strong><span>YVR · 2/4 同日</span></div></div></div>
+      <aside class="flight-note"><strong>溫哥華先住兩晚</strong><p>2/4 抵達後休息，2/5 緩衝；2/6 搭 Air North 前往黃刀鎮。</p></aside>
     </section>
 
     <section class="section ticket-section" aria-labelledby="ticket-title">
-      <div class="section-heading compact-heading"><div><p class="eyebrow dark">FLIGHT PLAN</p><h2 id="ticket-title">黃刀鎮往返已選，跨洋銜接待訂</h2></div><p>Air North 價格是 1 位成人含稅查詢結果；5 人最終票價、行李規則與溫哥華至里斯本航段須重新確認。</p></div>
-      <div class="ticket-summary"><div><span>黃刀鎮來回參考</span><strong>CAD 648.81／人</strong></div><p>2/6 去程、2/9 晚間回溫哥華。舊版「2/9 清晨從黃刀鎮直往里斯本」的航班與總票價目標已不適用。</p></div>
+      <div class="section-heading compact-heading"><div><p class="eyebrow dark">FLIGHT & RAIL PLAN</p><h2 id="ticket-title">跨城航段與返台航班</h2></div><p>既有班次與單人價格僅作參考；5 人票價、行李及 2027 班表均須向承運方確認。</p></div>
+      <div class="ticket-summary"><div><span>黃刀鎮來回參考</span><strong>CAD 648.81／人</strong></div><p>Air North 2/6 去程、2/9 晚間回溫哥華的舊查價。其餘美國國內航段與 3/1 LAX 返台均待查，不先估票價。</p></div>
       <div class="ticket-grid">
-        <article class="ticket-card featured"><header><span class="ticket-number">票 1</span><span class="ticket-badge">推薦開口票</span></header><h3>中華航空 Multi-city</h3><div class="ticket-leg"><time>02/04 四</time><strong>CI0032</strong><p><b>TPE 桃園 T2</b><span>23:35</span><i>直飛</i><b>YVR 溫哥華</b><span>19:00 同日</span></p></div><div class="ticket-leg"><time>03/03 三</time><strong>CI0074</strong><p><b>AMS 阿姆斯特丹</b><span>10:40</span><i>直飛</i><b>TPE 桃園 T1</b><span>06:25 +1</span></p></div><div class="ticket-price"><span>建議成交價</span><strong>≤ NT$ 50,000</strong><small>可接受上限 NT$ 58,000</small></div><p class="ticket-advice">用「多航點」一次搜尋兩段，通常比兩張單程合理；至少選含 1 件托運行李、可付費改票的票種。</p><a href="https://www.china-airlines.com/tw/zh" target="_blank" rel="noreferrer">中華航空多航點查票 ↗</a></article>
-        <article class="ticket-card"><header><span class="ticket-number">票 2</span><span class="ticket-badge">暫定選定</span></header><h3>Air North 黃刀鎮來回</h3><div class="ticket-leg"><time>02/06 六</time><strong>4N869</strong><p><b>YVR 溫哥華</b><span>14:55</span><i>直飛</i><b>YZF 黃刀鎮</b><span>18:25</span></p></div><div class="ticket-leg multi"><time>02/09 二</time><strong>4N880</strong><p><b>YZF 黃刀鎮</b><span>19:15</span><i>直飛</i><b>YVR 溫哥華</b><span>21:00</span></p></div><div class="ticket-price"><span>1 人含稅查價</span><strong>CAD 648.81</strong><small>5 人最終票價待查</small></div><p class="ticket-advice">去程 CAD 322.83、回程 CAD 325.98。選位及額外費用另計；行李額度以結帳頁為準。</p><a href="https://booking.flyairnorth.com/servlet/FlightDetailsServlet" target="_blank" rel="noreferrer">Air North 訂位 ↗</a></article>
-        <article class="ticket-card"><header><span class="ticket-number">票 3</span><span class="ticket-badge">待確認</span></header><h3>溫哥華 → 里斯本</h3><div class="ticket-leg"><time>02/10 起</time><strong>待選航班</strong><p><b>YVR 溫哥華</b><span>出發待定</span><i>轉機待查</i><b>LIS 里斯本</b><span>抵達待定</span></p></div><div class="ticket-price"><span>票價</span><strong>待查</strong><small>歐洲日程依抵達日調整</small></div><p class="ticket-advice">2/9 21:00 才返抵 YVR，需重新安排過夜與跨洋行程；不要沿用舊版 2/10 09:20 抵達 LIS 的估算。</p><a href="https://www.google.com/travel/flights" target="_blank" rel="noreferrer">查詢可銜接航班 ↗</a></article>
-        <article class="ticket-card schedule-change"><header><span class="ticket-number">票 4</span><span class="ticket-badge">暫定</span></header><h3>Vueling 單程</h3><div class="ticket-leg"><time>02/18 四</time><strong>VY1171</strong><p><b>OPO 波多</b><span>08:45</span><i>直飛 1:45</i><b>BCN 巴塞隆納 T1</b><span>11:30</span></p></div><div class="ticket-price"><span>含托運建議價</span><strong>NT$ 3,500–5,500</strong><small>超過 NT$ 6,500 再比價</small></div><p class="ticket-advice">這段沿用原歐洲規劃；先確認溫哥華至里斯本的抵達日期，再重新核對 2/18 班次與含行李價格。</p><a href="https://www.vueling.com/en" target="_blank" rel="noreferrer">Vueling 查票 ↗</a></article>
-        <article class="ticket-card"><header><span class="ticket-number">票 5</span><span class="ticket-badge">暫定</span></header><h3>Transavia 單程</h3><div class="ticket-leg"><time>02/27 六</time><strong>HV6730</strong><p><b>SVQ 塞維亞</b><span>10:10</span><i>直飛 3:05</i><b>AMS 阿姆斯特丹</b><span>13:15</span></p></div><div class="ticket-price"><span>含托運建議價</span><strong>NT$ 4,500–7,000</strong><small>超過 NT$ 8,000 再比價</small></div><p class="ticket-advice">這段沿用原歐洲規劃，須待跨洋銜接確定後再核對日期、班次及含行李總價。</p><a href="https://www.transavia.com/en-EU/home/" target="_blank" rel="noreferrer">Transavia 查票 ↗</a></article>
+        <article class="ticket-card featured"><header><span class="ticket-number">航段 1</span><span class="ticket-badge">既有記錄</span></header><h3>Air North 黃刀鎮來回</h3><div class="ticket-leg"><time>02/06 六</time><strong>4N869</strong><p><b>YVR 溫哥華</b><span>14:55</span><i>直飛</i><b>YZF 黃刀鎮</b><span>18:25</span></p></div><div class="ticket-leg multi"><time>02/09 二</time><strong>4N880</strong><p><b>YZF 黃刀鎮</b><span>19:15</span><i>直飛</i><b>YVR 溫哥華</b><span>21:00</span></p></div><div class="ticket-price"><span>1 人含稅舊查價</span><strong>CAD 648.81</strong><small>5 人實際總價待查</small></div><p class="ticket-advice">去回程時刻與價格付款前重查，確認選位與行李費用。</p><a href="https://booking.flyairnorth.com/servlet/FlightDetailsServlet" target="_blank" rel="noreferrer">Air North 訂位 ↗</a></article>
+        <article class="ticket-card"><header><span class="ticket-number">航段 2</span><span class="ticket-badge">待查班次</span></header><h3>溫哥華 → 西雅圖</h3><div class="ticket-leg"><time>02/11 四</time><strong>Amtrak Cascades</strong><p><b>Pacific Central</b><span>時間待查</span><i>鐵路</i><b>King Street</b><span>時間待查</span></p></div><div class="ticket-price"><span>票價</span><strong>待查</strong><small>確認跨境文件與行李規則</small></div><p class="ticket-advice">選擇白天車次，預留車站報到與邊境查驗時間。</p><a href="https://www.amtrak.com/cascades-train" target="_blank" rel="noreferrer">Amtrak Cascades ↗</a></article>
+        <article class="ticket-card"><header><span class="ticket-number">航段 3</span><span class="ticket-badge">手寫價待核</span></header><h3>西雅圖 → 拉斯維加斯</h3><div class="ticket-leg"><time>本行程 02/15 一</time><strong>待選航班</strong><p><b>SEA 西雅圖</b><span>時間待定</span><i>優先直飛</i><b>LAS 拉斯維加斯</b><span>時間待定</span></p></div><div class="ticket-price"><span>照片手寫參考 · 幣別未註</span><strong>$154 · Choice $194</strong><small>另圈選 $239；手寫日期 2/7、2/8，與本行程日期不同</small></div><p class="ticket-advice">以上是照片上的候選價格與日期，不代表 2/15 班次或已訂票；須依 5 人實際日期重新查價。</p><a href="https://www.google.com/travel/flights" target="_blank" rel="noreferrer">查詢航班 ↗</a></article>
+        <article class="ticket-card"><header><span class="ticket-number">航段 4</span><span class="ticket-badge">手寫價待核</span></header><h3>拉斯維加斯 → 洛杉磯</h3><div class="ticket-leg"><time>本行程 02/21 日</time><strong>待選航班</strong><p><b>LAS 拉斯維加斯</b><span>時間待定</span><i>搭機</i><b>LAX 洛杉磯</b><span>時間待定</span></p></div><div class="ticket-price"><span>照片手寫參考 · 幣別未註</span><strong>$71 · Choice $106 + $45</strong><small>另圈選 $151；手寫日期 2/22–2/25，與本行程日期不同</small></div><p class="ticket-advice">照片路線寫作 LAS →「LOS」，此處暫按洛杉磯理解；目的機場代碼與 2/21 班次須重新確認。</p><a href="https://www.google.com/travel/flights" target="_blank" rel="noreferrer">查詢航班 ↗</a></article>
+        <article class="ticket-card schedule-change"><header><span class="ticket-number">航段 5</span><span class="ticket-badge">待選航班</span></header><h3>洛杉磯 → 台北</h3><div class="ticket-leg"><time>03/01 一</time><strong>返台航班</strong><p><b>LAX 洛杉磯</b><span>出發日確定</span><i>班次待查</i><b>TPE 桃園</b><span>抵達日待查</span></p></div><div class="ticket-price"><span>票價與時刻</span><strong>待查</strong><small>依實際航班確認抵台日期</small></div><p class="ticket-advice">以 3/1 自 LAX 出發搜尋，確認轉機、行李、航廈及抵台日期。</p><a href="https://www.google.com/travel/flights" target="_blank" rel="noreferrer">查詢航班 ↗</a></article>
       </div>
-      <div class="ticket-note"><strong>付款前核對</strong><p>Air North 的 1 人參考價尚未代表 5 人總價；跨洋機票待重查。確認各段機場、日期、行李、轉機及改退票規則後，才能重算全程機票預算。</p></div>
-      <details class="ticket-sources"><summary>班表與價格依據</summary><ul><li><a href="https://www.china-airlines.com/tw/zh" target="_blank" rel="noreferrer">中華航空</a>：CI0032 與 CI0074 為既有行程記錄，出票前重查。</li><li><a href="https://booking.flyairnorth.com/servlet/FlightDetailsServlet" target="_blank" rel="noreferrer">Air North</a>：4N869／4N880 及 CAD 648.81 為黃刀鎮行程文件的 1 人參考記錄。</li><li>溫哥華至里斯本的航班、抵達日及票價尚未確認。</li><li>VY1171 及 HV6730 仍沿用舊版歐洲規劃，須待跨洋抵達日確定後再核對。</li></ul></details>
+      <div class="ticket-note"><strong>出發前核對</strong><p>網站中的 Air North 價格是單人舊參考，不能代表 5 人總價；Amtrak、兩段美國國內線與返台航班均未確認。</p></div>
     </section>
 
     <section id="yellowknife-plan" class="section yellowknife-plan" aria-labelledby="yellowknife-plan-title">
@@ -116,7 +96,7 @@
       <div class="yk-summary"><div><span>現行方案含住宿與機場計程車</span><strong>約 NT$ 14,701–14,791／人</strong><small>不含機票、狗拉雪橇接送、餐費與小費；機場計程車暫按一車由 5 人分攤</small></div><div><span>加 Air North 來回機票</span><strong>約 NT$ 29,293–29,383／人</strong><small>以 CAD 648.81／人與 1 CAD ≈ NT$22.49 試算；5 人最終票價待查</small></div></div>
       <div class="yk-grid">
         <article><span>住宿 · 2/6–2/9</span><h3>Greenhaven Guesthouse</h3><p>3 房、4 床、2 衛浴。3 晚 NT$35,470／房，5 人分攤約 NT$7,094／人。</p><a href="https://www.airbnb.com/rooms/17071515" target="_blank" rel="noreferrer">查看房源 ↗</a></article>
-        <article><span>極光 · 2/7、2/8</span><h3>Northern Lights Tours</h3><p>首晚 CAD 85、次晚 CAD 75；含住宿接送、熱飲點心與攝影。第三晚只有 2/6 抵達夜可排，尚未確認能否趕上。</p><a href="https://www.northernlightstours.co/tour-package/northern-lights-tour/" target="_blank" rel="noreferrer">查看極光團 ↗</a></article>
+        <article><span>極光 · 2/7、2/8</span><h3>Northern Lights Tours</h3><p>首晚 CAD 85、次晚 CAD 75；含住宿接送、熱飲點心與攝影。接送地址與集合方式待確認。</p><a href="https://www.northernlightstours.co/tour-package/northern-lights-tour/" target="_blank" rel="noreferrer">查看極光團 ↗</a></article>
         <article><span>狗拉雪橇 · 2/8</span><h3>Beck’s Kennels</h3><p>自駕狗隊 CAD 110.25／人含稅；接送另約 CAD 5.25。時段、成團與接送待確認。</p><a href="https://www.beckskennels.com/item/drive-your-own-dog-team/" target="_blank" rel="noreferrer">查看活動 ↗</a></article>
         <article><span>冬裝 · 暫按 2/7–2/9</span><h3>3 天租借 CAD 60</h3><p>Northern Lights Tours 的預訂頁列出 3 天 CAD 60；須搭配該公司行程。尺寸、取還時間與稅費待確認。</p><a href="https://www.northernlightstours.co/bookyourtour/" target="_blank" rel="noreferrer">查看租借價 ↗</a></article>
       </div>
@@ -124,56 +104,43 @@
     </section>
 
     <section id="itinerary" class="section itinerary-section" aria-labelledby="itinerary-title">
-      <div class="section-heading compact-heading"><div><p class="eyebrow dark">DAY BY DAY</p><h2 id="itinerary-title">29 日逐日行程</h2></div><p>每天保留至少一段彈性；極光夜後不安排早起長途活動，歐洲跨城日也只留輕量散步。</p></div>
-      <div class="region-tabs" role="group" aria-label="篩選行程地區"><button class="active" data-region="all">全部</button><button data-region="canada">加拿大</button><button data-region="portugal">葡萄牙</button><button data-region="spain">西班牙</button><button data-region="netherlands">荷蘭</button></div>
+      <div class="section-heading compact-heading"><div><p class="eyebrow dark">DAY BY DAY</p><h2 id="itinerary-title">26 日逐日行程</h2></div><p>極光夜後保留休息，跨城移動採火車、航班與預約接送；活動日留有調整空間。</p></div>
+      <div class="region-tabs" role="group" aria-label="篩選行程地區"><button class="active" data-region="all">全部</button><button data-region="canada">加拿大</button><button data-region="usa">美國</button></div>
       <div id="itinerary-list" class="itinerary-list"></div>
     </section>
 
-    <figure class="visual-break"><img src="./assets/iberia-winter.jpg?v=2" width="1774" height="887" loading="lazy" decoding="async" alt="里斯本電車、波多河岸、巴塞隆納現代主義建築、馬德里廣場與塞維亞橘樹庭院交織的伊比利半島插畫"><figcaption><span>02.11—02.26 · 暫定</span><strong>伊比利半島 · 從大西洋藍走進安達魯西亞暖色</strong></figcaption></figure>
-
     <section id="stays" class="section stays-section" aria-labelledby="stays-title">
-      <div class="section-heading compact-heading"><div><p class="eyebrow dark">WHERE TO STAY</p><h2 id="stays-title">住宿基地</h2></div><p>以車站或舊城步行圈為主，降低冬季拖行李與晚間轉乘負擔。價格為雙人房估算，實際以訂房日為準。</p></div>
+      <div class="section-heading compact-heading"><div><p class="eyebrow dark">WHERE TO STAY</p><h2 id="stays-title">住宿基地</h2></div><p>以交通方便、容易預約接送與當地團的住宿區為優先；價格與房型待查。</p></div>
       <div id="stay-grid" class="stay-grid"></div>
     </section>
 
     <section id="transport" class="section transport-section" aria-labelledby="transport-title">
-      <div class="section-heading compact-heading"><div><p class="eyebrow">MOVE SMART</p><h2 id="transport-title">交通拆開看，更好訂</h2></div><p>先按加拿大與歐洲分區，再分成飛機與陸地交通；航班、城際列車與抵達後接駁不再混在同一張表。</p></div>
-      <div class="transport-key" aria-label="交通分類圖例"><span><i class="key-air">AIR</i> 飛機</span><span><i class="key-land">LAND</i> 陸地</span><p>每段皆附官方查詢連結。標示「參考」者為 2026/09/19 可查價格；2027 實際售價以開賣後為準。</p></div>
+      <div class="section-heading compact-heading"><div><p class="eyebrow">MOVE SMART</p><h2 id="transport-title">不自駕的移動安排</h2></div><p>跨城搭火車或飛機；城市活動以預約團、計程車與叫車服務為主。班次和價格未確認前不列作已訂。</p></div>
+      <div class="transport-key" aria-label="交通分類圖例"><span><i class="key-air">AIR</i> 飛機</span><span><i class="key-land">LAND</i> 火車與當地交通</span><p>所有未出票班次與價格皆標示待查，付款前以承運方或業者資料為準。</p></div>
       <div id="transport-groups" class="transport-regions"></div>
     </section>
 
-    <figure class="visual-break amsterdam-break"><img src="./assets/amsterdam-blue-hour.jpg?v=2" width="1672" height="941" loading="lazy" decoding="async" alt="冬末藍調時刻的阿姆斯特丹運河、拱橋、腳踏車、運河船與暖色窗燈插畫"><figcaption><span>02.27—03.03</span><strong>阿姆斯特丹 · 用運河藍調收束這趟長旅</strong></figcaption></figure>
-
     <section id="budget" class="section budget-section" aria-labelledby="budget-title">
-      <div class="budget-copy"><p class="eyebrow dark">BUDGET FRAME</p><h2 id="budget-title">全程預算待重算</h2><p>舊版 2 人、4 晚極光與 YZF–LIS 航班假設已失效。黃刀鎮段暫按 5 人分攤與兩晚極光估算；待 YVR–LIS 航班及歐洲抵達日確認後重算全程。</p><div class="budget-total"><span>黃刀鎮含機票、住宿與已列活動</span><strong>約 NT$ 29,293–29,383／人</strong></div></div>
-      <div id="budget-bars" class="budget-bars" aria-label="已確認可試算的黃刀鎮費用"></div>
+      <div class="budget-copy"><p class="eyebrow dark">BUDGET FRAME</p><h2 id="budget-title">全程預算待重算</h2><p>目前只保留黃刀鎮段可試算金額。美國住宿、當地團、火車、國內線與 3/1 返台機票尚未報價，待 5 人方案確認後再估全程費用。</p><div class="budget-total"><span>黃刀鎮含機票、住宿與已列活動</span><strong>約 NT$ 29,293–29,383／人</strong></div></div>
+      <div id="budget-bars" class="budget-bars" aria-label="目前可試算的黃刀鎮費用"></div>
     </section>
 
     <section id="preparation" class="section preparation-section" aria-labelledby="preparation-title">
-      <div class="section-heading compact-heading"><div><p class="eyebrow">READY TO GO</p><h2 id="preparation-title">出發前，一項一項準備好</h2></div><p>依建議完成日期排列；每項同時標出旅途中真正會用到的日期與地點。勾選狀態只保存在這台裝置。</p></div>
-      <div class="preparation-overview">
-        <div class="preparation-progress"><span id="preparation-progress-label">已完成 0／0 項</span><div class="preparation-progress-track" aria-hidden="true"><span id="preparation-progress-bar"></span></div></div>
-        <div class="preparation-filters" role="group" aria-label="篩選準備項目">
-          <button type="button" class="active" data-preparation-filter="all" aria-pressed="true">全部</button>
-          <button type="button" data-preparation-filter="pending" aria-pressed="false">待完成</button>
-          <button type="button" data-preparation-filter="done" aria-pressed="false">已完成</button>
-        </div>
-      </div>
-      <p id="preparation-status" class="sr-only" role="status" aria-live="polite"></p>
-      <div id="preparation-list" class="preparation-list"></div>
-      <noscript><p class="preparation-noscript">啟用 JavaScript 後即可查看並勾選完整準備清單。</p></noscript>
+      <div class="section-heading compact-heading"><div><p class="eyebrow">READY TO GO</p><h2 id="preparation-title">出發前，一項一項準備好</h2></div><p>依建議完成日期排列；勾選狀態只保存在這台裝置。</p></div>
+      <div class="preparation-overview"><div class="preparation-progress"><span id="preparation-progress-label">已完成 0／0 項</span><div class="preparation-progress-track" aria-hidden="true"><span id="preparation-progress-bar"></span></div></div><div class="preparation-filters" role="group" aria-label="篩選準備項目"><button type="button" class="active" data-preparation-filter="all" aria-pressed="true">全部</button><button type="button" data-preparation-filter="pending" aria-pressed="false">待完成</button><button type="button" data-preparation-filter="done" aria-pressed="false">已完成</button></div></div>
+      <p id="preparation-status" class="sr-only" role="status" aria-live="polite"></p><div id="preparation-list" class="preparation-list"></div><noscript><p class="preparation-noscript">啟用 JavaScript 後即可查看並勾選完整準備清單。</p></noscript>
     </section>
 
     <section id="checklist" class="section checklist-section" aria-labelledby="check-title">
-      <div class="section-heading compact-heading"><div><p class="eyebrow dark">BOOKING ORDER</p><h2 id="check-title">照這個順序預訂</h2></div><p>先處理價格波動最大、替代性最低的項目；每一次訂票後都回來更新時間與取消條款。</p></div>
-      <ol class="booking-list"><li><span>現在</span><div><strong>Air North 5 人票價與 Greenhaven</strong><p>確認 2/6–2/9 航班、住宿最終價格及取消條件。</p></div></li><li><span>接著</span><div><strong>2/9 晚返 YVR 後的里斯本銜接</strong><p>查可行航班與抵達日，再修正歐洲住宿和行程。</p></div></li><li><span>接著</span><div><strong>兩晚極光、狗拉雪橇與冬裝</strong><p>確認 2/7、2/8 名額、3 天租期、尺寸與接送。</p></div></li><li><span>60–90 天</span><div><strong>葡萄牙、西班牙城際列車</strong><p>跨洋抵達日確認後，再核對 CP 與 Renfe 的日期。</p></div></li><li><span>30–60 天</span><div><strong>熱門景點時段</strong><p>依更新後的歐洲日期預約宮殿、美術館與表演。</p></div></li></ol>
-      <div class="docs-grid"><article><span>CANADA</span><h3>加拿大 eTA</h3><p>持台灣外交部核發、含身分證字號的護照搭機入境通常須申請 eTA；換新護照需重新申請。</p><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta.html" target="_blank" rel="noreferrer">加拿大政府官方資訊 ↗</a></article><article><span>EUROPE</span><h3>EES／ETIAS</h3><p>2027 年規定仍可能處於上線或寬限階段，請在出發前 3 個月及 1 週各查一次官方公告。</p><a href="https://travel-europe.europa.eu/" target="_blank" rel="noreferrer">歐盟官方資訊 ↗</a></article><article><span>WINTER</span><h3>零下 20–40°C</h3><p>黃刀鎮以租借極地外套、雪褲、手套與雪靴為主；相機電池貼身保暖並準備備用電池。</p><a href="https://exploreyellowknife.com/plan-your-trip" target="_blank" rel="noreferrer">黃刀旅遊資訊 ↗</a></article></div>
+      <div class="section-heading compact-heading"><div><p class="eyebrow dark">BOOKING ORDER</p><h2 id="check-title">照這個順序預訂</h2></div><p>先確認固定日期與跨境交通，再安排可替代的城市活動和接送。</p></div>
+      <ol class="booking-list"><li><span>現在</span><div><strong>確認 5 人跨境航段與住宿</strong><p>核對 Air North、Greenhaven、溫哥華住宿及各航段行李規則。</p></div></li><li><span>接著</span><div><strong>安排 2/11 Amtrak 與美國境內航班</strong><p>確認邊境文件、車票，以及 2/15 SEA–LAS、2/21 LAS–LAX 和 3/1 LAX 返台班次。</p></div></li><li><span>接著</span><div><strong>預訂極光、狗拉雪橇與冬裝</strong><p>確認 2/7、2/8 名額、冬裝尺寸、租期與接送。</p></div></li><li><span>出發前</span><div><strong>預訂景點與當地團</strong><p>優先處理大峽谷／胡佛水壩接送團、表演、Universal Studios 與 Disneyland。</p></div></li></ol>
+      <div class="docs-grid"><article><span>CANADA</span><h3>加拿大 eTA</h3><p>依每位旅客所持護照確認搭機入境所需文件，換發護照後重新核對申請狀態。</p><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta.html" target="_blank" rel="noreferrer">加拿大政府官方資訊 ↗</a></article><article><span>UNITED STATES</span><h3>美國入境文件</h3><p>依旅客護照與官方規定確認入境或轉乘文件，並為溫哥華至西雅圖陸路入境預留查驗時間。</p><a href="https://esta.cbp.dhs.gov/" target="_blank" rel="noreferrer">美國 ESTA 官方網站 ↗</a></article><article><span>WINTER</span><h3>黃刀鎮極地保暖</h3><p>確認租借外套、雪褲、手套與雪靴；相機電池貼身保暖並準備備用電池。</p><a href="https://exploreyellowknife.com/plan-your-trip" target="_blank" rel="noreferrer">黃刀旅遊資訊 ↗</a></article></div>
     </section>
   </main>
 
-  <footer><div><strong>2027 極光與歐洲冬旅</strong><p>黃刀鎮方案更新：2026.09.26 · 所有班次與價格需在付款前再次確認。</p></div><a href="#top">回到頁首 ↑</a></footer>
+  <footer><div><strong>2027 極光與美西冬旅</strong><p>黃刀鎮 2/6–2/9 · 洛杉磯 3/1 返台（航班待查）· 班次與價格付款前再次確認。</p></div><a href="#top">回到頁首 ↑</a></footer>
 
   <script src="vendor/leaflet/leaflet.js?v=3"></script>
-  <script src="app.js?v=9"></script>
+  <script src="app.js?v=10"></script>
 </body>
 </html>
